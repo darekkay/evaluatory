@@ -1,0 +1,18 @@
+<h2 id="module-axe-core">axe-core</h2>
+
+<ul>
+  <li>
+    <strong class="{{ 'issue' if violations.length > 0 }}">{{ violations.length }} violation(s)</strong>
+  </li>
+  <li>View <a href="{{ jsonFileName }}">JSON results</a></li>
+</ul>
+
+{% for violation in violations %}
+  <section>
+    <h3>{% include violation.icon %} {{ violation.description }}</h3>
+    <p>Violated
+      <a href="{{ violation.helpUrl }}" target="_blank" rel="noopener">{{ violation.id }}</a> on:
+      <em>{{ violation.breakpoints.join(", ") }}</em></p>
+    {% code "html" %}{{ violation.nodes[0].html | safe }}{% endcode %}
+  </section>
+{% endfor %}

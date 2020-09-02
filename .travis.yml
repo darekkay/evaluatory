@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "12"
+  - "14"
+
+cache:
+  yarn: true
+
+script:
+  - yarn ci
+
+branches:
+  only:
+    - master

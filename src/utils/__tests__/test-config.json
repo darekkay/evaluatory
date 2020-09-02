@@ -1,0 +1,4 @@
+{
+  "maxConnections": 1,
+  "modules": ["pa11y"]
+}

@@ -1,0 +1,10 @@
+<h2 id="module-screenshot">screenshot</h2>
+
+{% for image in images %}
+
+  <h3 id="screenshot-{{ image.breakpoint }}">{{ image.breakpoint }}</h3>
+  <a href="{{ image.src }}" target="_blank" rel="noopener" class="inline-block">
+    <img src="{{ image.src }}" alt="Screenshot for {{ image.breakpoint }}" class="block" style="max-height: 200px;">
+  </a>
+
+{% endfor %}

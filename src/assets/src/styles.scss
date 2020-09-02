@@ -1,0 +1,50 @@
+@import "../../../node_modules/@darekkay/styles/src/all";
+
+main {
+  max-width: 1000px;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+}
+
+section {
+  padding-bottom: 2rem;
+}
+
+img {
+  border: 1px solid $gray-cool-10;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.issue {
+  color: red;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.icon-severity {
+  margin-right: 0.5rem;
+}
+.icon-severity-minor {
+  color: $cyan-vivid-20;
+}
+.icon-severity-moderate {
+  color: $yellow-vivid-20;
+}
+.icon-severity-serious {
+  color: $orange-vivid-40;
+}
+.icon-severity-critical {
+  color: $red-50;
+}

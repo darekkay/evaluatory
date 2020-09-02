@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example page 1</title>
+    <style>
+      .phone-only,
+      .desktop-only {
+        visibility: hidden;
+      }
+
+      @media (min-width: 320px) and (max-width: 767px) {
+        .phone-only {
+          visibility: visible;
+        }
+      }
+
+      @media (min-width: 1440px) {
+        .desktop-only {
+          visibility: visible;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      Hello World
+      <input class="desktop-only" type="text" />
+      <button class="phone-only"></button>
+    </main>
+  </body>
+</html>

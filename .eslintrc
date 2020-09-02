@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "@darekkay/eslint-config/nodejs",
+    "@darekkay/eslint-config/plugins/jest"
+  ],
+  "rules": {
+    "no-await-in-loop": "off"
+  }
+}

@@ -1,6 +1,6 @@
 # Evaluatory
 
-![npm](https://img.shields.io/npm/v/evaluatory?style=flat-square)
+[![npm](https://img.shields.io/npm/v/evaluatory?style=flat-square)](https://www.npmjs.com/package/evaluatory)
 [![Travis](https://img.shields.io/travis/com/darekkay/evaluatory?style=flat-square)](https://travis-ci.com/darekkay/evaluatory)
 [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/darekkay/evaluatory/blob/master/LICENSE)
 

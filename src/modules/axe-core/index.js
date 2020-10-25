@@ -7,7 +7,10 @@ const { join } = require("path");
 const { render } = require("../../utils/render");
 
 const injectAxe = async (page) => {
-  const axeScript = await readFile("node_modules/axe-core/axe.min.js", "utf8");
+  const axeScript = await readFile(
+    join(__dirname, "../../../node_modules/axe-core/axe.min.js"),
+    "utf8"
+  );
   // eslint-disable-next-line no-eval
   await page.evaluate((axe) => window.eval(axe), axeScript);
 };

@@ -1,16 +1,30 @@
 /* eslint-env browser */
 
 const _ = require("lodash");
-const { readFile, outputJson } = require("fs-extra");
+const { readFile, existsSync, outputJson } = require("fs-extra");
 const { join } = require("path");
+const logger = require("@darekkay/logger");
 
 const { render } = require("../../utils/render");
 
 const injectAxe = async (page) => {
-  const axeScript = await readFile(
-    join(__dirname, "../../../node_modules/axe-core/axe.min.js"),
-    "utf8"
-  );
+  const axeScriptLocation = [
+    // evaluatory installed globally
+    "../../../node_modules/axe-core/axe.min.js",
+
+    // evaluatory installed as a local dependency
+    "../../../../axe-core/axe.min.js",
+  ]
+    .map((location) => join(__dirname, location))
+    .find((location) => existsSync(location));
+
+  if (!axeScriptLocation) {
+    logger.error("axe-core script not found.");
+    return;
+  }
+
+  const axeScript = await readFile(axeScriptLocation, "utf8");
+
   // eslint-disable-next-line no-eval
   await page.evaluate((axe) => window.eval(axe), axeScript);
 };

@@ -42,7 +42,7 @@ class NunjucksExtension {
   }
 
   wrap(html) {
-    return `<pre class="hljs">${html}</pre>`;
+    return `<pre class="hljs" tabindex="0">${html}</pre>`;
   }
 }
 

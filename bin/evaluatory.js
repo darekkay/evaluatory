@@ -9,6 +9,9 @@ cli
   .string("-c, --config", { desc: "Configuration file path" })
   .string("-o, --output", { desc: "Output folder" })
   .string("-m, --modules", { desc: "Modules to execute (comma-separated)" })
+  .boolean("--no-open-results", {
+    desc: "Don't open the results page after evaluation",
+  })
   .boolean("--verbose", { desc: "Verbose/debug mode" })
   .positional("[url]", { paramsDesc: "URL", optional: true });
 

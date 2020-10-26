@@ -3,6 +3,7 @@ const { join, resolve } = require("path");
 const { webkit } = require("playwright");
 const asyncPool = require("tiny-async-pool");
 const { emptyDir, copy } = require("fs-extra");
+const open = require("open");
 const logger = require("@darekkay/logger");
 
 const { renderToFile } = require("./utils/render");
@@ -106,6 +107,10 @@ const execute = async (config) => {
 
   logger.info(`Saved results to: ${resolve(config.output)}`);
   logger.success("Finished evaluation.");
+
+  if (config.openResults) {
+    await open(join(config.output, "index.html"));
+  }
 };
 
 module.exports = execute;

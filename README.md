@@ -41,15 +41,16 @@ $ evaluatory --help
 Usage: evaluatory [url] [options]
 
 Arguments:
-  [url]  URL                                                       [string]
+  [url]  URL
 
 Options:
-  -c, --config   Configuration file path                           [string]
-  -o, --output   Output folder                                     [string]
-  -m, --modules  Modules to execute (comma-separated)              [string]
-  --verbose      Verbose/debug mode                               [boolean]
-  -h, --help     Show help                       [commands: help] [boolean]
-  -v, --version  Show version number          [commands: version] [boolean]
+  -c, --config       Configuration file path
+  -o, --output       Output folder
+  -m, --modules      Modules to execute (comma-separated)
+  --no-open-results  Don't open the results page after evaluation
+  --verbose          Verbose/debug mode
+  -h, --help         Show help
+  -v, --version      Show version number
 ```
 
 Run default configuration for a single URL:

@@ -13,6 +13,8 @@ module.exports = {
   // Modules to run
   modules: ["axe-core", "screenshot"],
 
+  openResults: true,
+
   // Device variants to check
   devices: [
     { name: "phone", options: playwrightDevices["iPhone 7"] },

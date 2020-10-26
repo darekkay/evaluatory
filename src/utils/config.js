@@ -30,6 +30,7 @@ const getConfig = (cliArguments = {}) => {
     output: cliArguments.output,
     modules: cliArguments.modules ? cliArguments.modules.split(",") : undefined,
     urls: cliArguments.url ? [cliArguments.url] : undefined,
+    openResults: cliArguments["no-open-results"] ? false : undefined,
   };
 
   return _.mergeWith(

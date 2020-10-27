@@ -47,6 +47,9 @@ module.exports = async ({ page, moduleName, index, config }) => {
     );
 
     violationsPerDevice[deviceName] = axeResults.violations;
+    // NOTE: axe-core additionally returns "needs review" items in axeResults.incomplete
+    // Those items are currently not handled here.
+    // More info: https://www.deque.com/axe/core-documentation/api-documentation/#results-object
   }
 
   // de-duplicate violations per breakpoint

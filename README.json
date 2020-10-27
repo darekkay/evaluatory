@@ -1,0 +1,7 @@
+{
+  "title": "Evaluatory",
+  "slug": "evaluatory",
+  "description": "Web page evaluation with a focus on accessibility.",
+  "layout": "article.njk",
+  "permalink": "index.html"
+}

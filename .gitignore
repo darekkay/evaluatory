@@ -19,5 +19,6 @@ package-lock.json
 
 ### App ###
 
+/docs
 /results
 *.local.json*

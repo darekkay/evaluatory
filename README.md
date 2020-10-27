@@ -6,7 +6,13 @@
 
 Web page evaluation with a focus on accessibility.
 
-This project is an alternative to tools like [webhint](https://webhint.io). Its goal is to scan websites and provide useful feedback on things to improve. The main motivation is being able to run [axe-core](https://github.com/dequelabs/axe-core) at different breakpoints at the same time (e.g. mobile, tablet and desktop).
+Currently, it is mainly a wrapper around [axe-core](https://github.com/dequelabs/axe-core), which tests a website for accessibility issues. 
+Evaluatory comes with two essential improvements:
+
+- Run checks at multiple breakpoints at the same time (e.g. mobile, tablet and desktop). Some accessibility issues are only applicable to certain breakpoints.
+- Provide a visual HTML results page.
+
+This project uses a modular architecture, so in the long term it could become an alternative to tools like [webhint](https://webhint.io).
 
 ## Installation
 
@@ -14,22 +20,22 @@ This tool requires Node.js version 12+.
 
 Install globally:
 
-```bash
+```shell
 $ yarn add -g evaluatory     # Yarn
 $ npm install -g evaluatory  # Npm
 ```
 
 Or install as a local dependency:
 
-```bash
+```shell
 $ yarn add evaluatory            # Yarn
 $ npm install --save evaluatory  # Npm
 ```
 
 Or use without installing:
 
-```bash
-$ npx evaluatory <file>
+```shell
+$ npx evaluatory <url>
 ```
 
 ## Usage
@@ -55,13 +61,13 @@ Options:
 
 Run default configuration for a single URL:
 
-```bash
+```shell
 $ evaluatory https://example.com
 ```
 
 Provide a custom configuration:
 
-```bash
+```shell
 $ evaluatory -c config.json
 ```
 

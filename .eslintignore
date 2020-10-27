@@ -5,4 +5,5 @@ node_modules
 /build
 /public
 
-/results
+/docs
+/evaluatory-results

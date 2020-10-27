@@ -2,7 +2,7 @@ const { devices: playwrightDevices } = require("playwright");
 
 module.exports = {
   // Output folder
-  output: "results",
+  output: "evaluatory-results",
 
   // URLs to evaluate
   urls: [],

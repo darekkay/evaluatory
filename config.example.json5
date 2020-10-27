@@ -1,6 +1,6 @@
 {
   // Output folder
-  output: "results",
+  output: "evaluatory-results",
 
   // URLs to evaluate
   urls: [

@@ -1,0 +1,11 @@
+{
+  urls: [
+    "https://example.com",
+    "https://twitter.com",
+    "https://medium.com/",
+    "https://news.ycombinator.com/",
+    "https://webaim.org/",
+    "https://www.a11yproject.com/",
+    "https://darekkay.com"
+  ]
+}

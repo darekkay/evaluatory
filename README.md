@@ -14,6 +14,10 @@ Evaluatory comes with two essential improvements:
 
 This project uses a modular architecture, so in the long term it could become an alternative to tools like [webhint](https://webhint.io).
 
+## Demo
+
+Check out a demo results page at [https://darekkay.com/evaluatory/demo/](https://darekkay.com/evaluatory/demo/). 
+
 ## Installation
 
 This tool requires Node.js version 12+.

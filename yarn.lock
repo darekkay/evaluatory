@@ -314,10 +314,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@darekkay/11ty@1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@darekkay/11ty/-/11ty-1.2.1.tgz#be30e680249614462dbb2b6c53c70669f04b69a6"
-  integrity sha512-P+9pxzFLD7pJmZHZREgoC7flh1HcBz11zl5MD3tX1M4LE2EUQBBKOJHNdbEKbqvqZF5CKl6OhltUUFyj/527vQ==
+"@darekkay/11ty@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@darekkay/11ty/-/11ty-1.2.2.tgz#ca5f23fa339aac4ad666eb00aecbafc170c397f0"
+  integrity sha512-D13oaotOa/3LJhWqWGEQ8Mul8ZF8YDUAfcnd00/5RwgOMCjW4V7DJnAiYWawnE4yeDdljxnnaIQow+G8MtlN8w==
   dependencies:
     "@darekkay/logger" "1.0.2"
 

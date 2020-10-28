@@ -6,6 +6,11 @@ module.exports = {
   paths: {
     destination: path("src/assets/dist"),
 
+    assets: {
+      source: path("src", "assets", "src", "assets"),
+      destination: path("src", "assets", "dist"),
+    },
+
     styles: {
       source: path("src", "assets", "src"),
       destination: path("src", "assets", "dist"),

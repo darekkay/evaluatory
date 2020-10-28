@@ -16,6 +16,7 @@ module.exports = function(eleventyConfig) {
 
   // copy assets
   eleventyConfig.addPassthroughCopy({ "node_modules/@darekkay/styles/dist/css/styles.css": "assets/styles.css" });
+  eleventyConfig.addPassthroughCopy({ "src/assets/src/assets/favicon.ico": "assets/favicon.ico" });
 
   return {
     dir: {

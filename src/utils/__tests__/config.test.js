@@ -10,21 +10,23 @@ describe("config", () => {
     logger.setLevel("error");
   });
 
-  test("returns the default config if no config file is specified", () => {
-    expect(getConfig()).toEqual(defaultConfig);
+  test("returns the default config if no config file is specified", async () => {
+    expect(await getConfig()).toEqual(defaultConfig);
   });
 
-  test("user config overrides default config", () => {
-    expect(getConfig({ config: join(__dirname, "test-config.json") })).toEqual({
+  test("user config overrides default config", async () => {
+    expect(
+      await getConfig({ config: join(__dirname, "test-config.json") })
+    ).toEqual({
       ...defaultConfig,
       maxConnections: 1,
       modules: ["pa11y"],
     });
   });
 
-  test("cli argument overrides user config", () => {
+  test("cli argument overrides user config", async () => {
     expect(
-      getConfig({
+      await getConfig({
         config: join(__dirname, "test-config.json"),
         modules: "axe-core",
       })
@@ -35,10 +37,10 @@ describe("config", () => {
     });
   });
 
-  test("returns the default config if the specified config file doesn't exist", () => {
+  test("returns the default config if the specified config file doesn't exist", async () => {
     logger.setLevel("silent");
     expect(
-      getConfig({
+      await getConfig({
         config: join(__dirname, "nonexisting-config.json"),
       })
     ).toEqual(defaultConfig);

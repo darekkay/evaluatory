@@ -8,6 +8,7 @@ const getConfig = require("../src/utils/config");
 cli
   .string("-c, --config", { desc: "Configuration file path" })
   .string("-o, --output", { desc: "Output folder" })
+  .string("--sitemap", { desc: "Sitemap URL" })
   .string("-m, --modules", { desc: "Modules to execute (comma-separated)" })
   .boolean("--no-open-results", {
     desc: "Don't open the results page after evaluation",
@@ -22,12 +23,17 @@ async function main() {
 
   logger.setLevel(cliArguments.verbose ? "debug" : "info");
 
-  const config = getConfig(cliArguments);
+  const config = await getConfig(cliArguments);
 
   logger.debug("Config", config);
 
   if (!config.modules.length) {
     logger.error("Specify modules to execute.");
+    process.exit(1);
+  }
+
+  if (!config.urls.length) {
+    logger.error("Specify URLs to evaluate.");
     process.exit(1);
   }
 

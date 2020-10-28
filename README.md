@@ -56,6 +56,7 @@ Arguments:
 Options:
   -c, --config       Configuration file path
   -o, --output       Output folder
+  --sitemap          Sitemap URL
   -m, --modules      Modules to execute (comma-separated)
   --no-open-results  Don't open the results page after evaluation
   --verbose          Verbose/debug mode
@@ -67,6 +68,12 @@ Run default configuration for a single URL:
 
 ```shell
 $ evaluatory https://example.com
+```
+
+Run default configuration for all URLs within a sitemap:
+
+```shell
+$ evaluatory --sitemap https://example.com/sitemap.xml
 ```
 
 Provide a custom configuration:

@@ -13,7 +13,11 @@ module.exports = {
   // Modules to run
   modules: ["axe-core", "screenshot"],
 
+  // Open the results page after evaluation
   openResults: true,
+
+  // Sitemap URL. If provided, all URLs from the sitemap will be evaluated
+  sitemap: undefined,
 
   // Device variants to check
   devices: [

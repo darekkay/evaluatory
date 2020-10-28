@@ -1,4 +1,6 @@
 const _ = require("lodash");
+const axios = require("axios");
+const xml = require("fast-xml-parser");
 const { readFileSync } = require("fs-extra");
 const json5 = require("json5");
 const logger = require("@darekkay/logger");
@@ -13,7 +15,24 @@ const configArrayCustomizer = (objectValue, sourceValue) => {
   }
 };
 
-const getConfig = (cliArguments = {}) => {
+const getUrlsForSitemap = async (sitemapUrl) => {
+  try {
+    const response = await axios.get(sitemapUrl);
+    const sitemap = response.data;
+    if (sitemap) {
+      const json = xml.parse(sitemap);
+      if (json && json.urlset && json.urlset.url) {
+        return json.urlset.url.map((url) => url.loc);
+      }
+    }
+  } catch (error) {
+    logger.error(error.message ? error.message : error);
+    return [];
+  }
+  return [];
+};
+
+const getConfig = async (cliArguments = {}) => {
   const configPath = cliArguments.config;
 
   let userConfig = {};
@@ -31,15 +50,27 @@ const getConfig = (cliArguments = {}) => {
     modules: cliArguments.modules ? cliArguments.modules.split(",") : undefined,
     urls: cliArguments.url ? [cliArguments.url] : undefined,
     openResults: cliArguments["no-open-results"] ? false : undefined,
+    sitemap: cliArguments.sitemap,
   };
 
-  return _.mergeWith(
+  const config = _.mergeWith(
     {},
     defaultConfig,
     userConfig,
     argvConfig,
     configArrayCustomizer
   );
+
+  if (config.sitemap) {
+    const sitemapUrls = await getUrlsForSitemap(config.sitemap);
+    if (sitemapUrls) {
+      logger.info(`Adding ${sitemapUrls.length} URLs from the sitemap.`);
+    }
+    // if a sitemap is provided, merge its content into the URLs
+    config.urls = (config.urls || []).concat(sitemapUrls);
+  }
+
+  return config;
 };
 
 module.exports = getConfig;

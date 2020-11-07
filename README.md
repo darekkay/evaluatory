@@ -1,7 +1,7 @@
 # Evaluatory
 
 [![npm](https://img.shields.io/npm/v/evaluatory?style=flat-square)](https://www.npmjs.com/package/evaluatory)
-[![Travis](https://img.shields.io/travis/com/darekkay/evaluatory?style=flat-square)](https://travis-ci.com/darekkay/evaluatory)
+[![Build](https://img.shields.io/github/workflow/status/darekkay/evaluatory/Continuous%20Integration/master?style=flat-square)](https://github.com/darekkay/evaluatory/actions)
 [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/darekkay/evaluatory/blob/master/LICENSE)
 
 Web page evaluation with a focus on accessibility.

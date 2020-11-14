@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Example page 1</title>
     <style>
+      .bad-contrast {
+        color: #ccc;
+      }
+
       .phone-only,
       .desktop-only {
         visibility: hidden;
@@ -26,9 +30,12 @@
 
   <body>
     <main>
-      Hello World
+      <p class="bad-contrast desktop-only">Bad contrast (Desktop only)</p>
       <input class="desktop-only" type="text" />
       <button class="phone-only"></button>
+      <div class="bad-contrast phone-only">Bad contrast (Phone only)</div>
+      <div class="bad-contrast">Bad contrast</div>
+      <div class="bad-contrast">Bad contrast</div>
     </main>
   </body>
 </html>

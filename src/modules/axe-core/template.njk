@@ -2,7 +2,7 @@
 
 <ul>
   <li>
-    <strong class="{{ 'issue' if violations.length > 0 }}">{{ violations.length }} violation(s)</strong>
+    <strong class="{{ 'issue' if issueCount > 0 }}">{{ issueCount }} violation(s)</strong>
   </li>
   <li>View <a href="{{ jsonFileName }}">JSON results</a></li>
 </ul>
@@ -13,6 +13,10 @@
     <p>Violated
       <a href="{{ violation.helpUrl }}" target="_blank" rel="noopener">{{ violation.id }}</a> on:
       <em>{{ violation.breakpoints.join(", ") }}</em></p>
-    {% code "html" %}{{ violation.nodes[0].html | safe }}{% endcode %}
+
+    {% for node in violation.nodes %}
+      {% code "html" %}{{ node.html | safe }}{% endcode %}
+    {% endfor %}
+
   </section>
 {% endfor %}

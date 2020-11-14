@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :bug: List all axe-core violation occurrences.
+
 ## [1.3.1] - 2020-10-28
 
 - :rocket: Add basic responsive design for the results table.

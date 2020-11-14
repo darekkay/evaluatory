@@ -56,18 +56,38 @@ module.exports = async ({ page, moduleName, index, config }) => {
   const violations = Object.entries(violationsPerDevice).reduce(
     (accumulator, [deviceName, deviceViolations]) => {
       deviceViolations.forEach((violation) => {
-        const accumulatedViolation = _.find(accumulator, violation);
+        const accumulatedViolation = _.find(
+          accumulator,
+          (value) => value.id === violation.id
+        );
         if (!accumulatedViolation) {
           violation.breakpoints = [deviceName];
           violation.icon = `../../assets/icons/severity-${violation.impact}.svg`;
           accumulator.push(violation);
         } else {
           accumulatedViolation.breakpoints.push(deviceName);
+          // add device-specific nodes
+          violation.nodes.forEach((node) => {
+            if (
+              !_.find(
+                accumulatedViolation.nodes,
+                (accumulatedNode) =>
+                  node.target.join("") === accumulatedNode.target.join("")
+              )
+            ) {
+              accumulatedViolation.nodes.push(node);
+            }
+          });
         }
       });
       return accumulator;
     },
     []
+  );
+
+  const issueCount = violations.reduce(
+    (accumulator, violation) => accumulator + violation.nodes.length,
+    0
   );
 
   const jsonFileName = `${index}-${moduleName}.json`;
@@ -76,8 +96,9 @@ module.exports = async ({ page, moduleName, index, config }) => {
   });
   const html = await render(join(__dirname, "template.njk"), {
     violations,
+    issueCount,
     jsonFileName,
   });
 
-  return { issueCount: violations.length, html };
+  return { issueCount, html };
 };

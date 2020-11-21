@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :gem: Update design.
+
 ## [1.4.0] - 2020-11-21
 
 - :bug: List all axe-core violation occurrences.

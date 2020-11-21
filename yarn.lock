@@ -337,10 +337,10 @@
     log-symbols "4.0.0"
     loglevel "1.6.8"
 
-"@darekkay/styles@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@darekkay/styles/-/styles-1.1.0.tgz#2563ca3cc2b31408bb30db6e269798dc25fa64e4"
-  integrity sha512-oof6Jsgt0IisuySlzdZLHQZ3TnIWVarhEqBEMlN8HkLVqKZYoX0XtKsWqza4ECenc8Hwg4ahtfrFUGrOVS25qQ==
+"@darekkay/styles@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@darekkay/styles/-/styles-1.2.0.tgz#1979a55be41495ff9107b0e7a5ba9ef2e825eb5f"
+  integrity sha512-iQlBRDzjuDEUM5foDIUkw8nJ3CzA/FfQSByb4Cm/brBCEqLsszdkk3VV1orZjiGjCQdBKZlIknsXnTdJLLNevQ==
 
 "@eslint/eslintrc@^0.2.0":
   version "0.2.0"

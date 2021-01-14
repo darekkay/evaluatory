@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.4.2] - 2021-01-14
+
 - :rocket: Add anchor links to the result page.
 
 ## [1.4.1] - 2021-01-14
@@ -41,7 +43,8 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/evaluatory/compare/1.4.1...HEAD
+[Unreleased]: https://github.com/darekkay/evaluatory/compare/1.4.2...HEAD
+[1.4.2]: https://github.com/darekkay/evaluatory/compare/1.4.1...1.4.2
 [1.4.1]: https://github.com/darekkay/evaluatory/compare/1.4.0...1.4.1
 [1.4.0]: https://github.com/darekkay/evaluatory/compare/1.3.1...1.4.0
 [1.3.1]: https://github.com/darekkay/evaluatory/compare/1.3.0...1.3.1

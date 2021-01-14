@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :rocket: Add anchor links to the result page.
+
 ## [1.4.1] - 2021-01-14
 
 - :gem: Update design.

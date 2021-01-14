@@ -6,7 +6,7 @@
 
 Web page evaluation with a focus on accessibility.
 
-Currently, it is mainly a wrapper around [axe-core](https://github.com/dequelabs/axe-core), which tests a website for accessibility issues. 
+Currently, it is mainly a wrapper around [axe-core](https://github.com/dequelabs/axe-core), which tests a website for accessibility issues.
 Evaluatory comes with two essential improvements:
 
 - Run checks at multiple breakpoints at the same time (e.g. mobile, tablet and desktop). Some accessibility issues are only applicable to certain breakpoints.
@@ -16,7 +16,7 @@ This project uses a modular architecture, so in the long term it could become an
 
 ## Demo
 
-Check out a demo results page at [https://darekkay.com/evaluatory/demo/](https://darekkay.com/evaluatory/demo/). 
+Check out a demo results page at [https://darekkay.com/evaluatory/demo/](https://darekkay.com/evaluatory/demo/).
 
 ## Installation
 
@@ -46,7 +46,7 @@ $ npx evaluatory <url>
 
 View program help:
 
-```
+```text
 $ evaluatory --help
 Usage: evaluatory [url] [options]
 

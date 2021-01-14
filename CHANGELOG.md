@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - :gem: Update design.
+- :hammer: Update internal dependencies.
 
 ## [1.4.0] - 2020-11-21
 

@@ -62,14 +62,14 @@ module.exports = async ({ page, moduleName, index, config }) => {
         );
         if (!accumulatedViolation) {
           violation.breakpoints = [deviceName];
-          violation.icon = `../../assets/icons/severity-${violation.impact}.svg`;
+          violation.icon = `icon-severity-${violation.impact}`;
           accumulator.push(violation);
         } else {
           accumulatedViolation.breakpoints.push(deviceName);
           // add device-specific nodes
           violation.nodes.forEach((node) => {
             if (
-              !_.find(
+              !_.some(
                 accumulatedViolation.nodes,
                 (accumulatedNode) =>
                   node.target.join("") === accumulatedNode.target.join("")

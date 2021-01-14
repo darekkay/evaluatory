@@ -1,28 +1,32 @@
-const markdownIt = require("markdown-it");
-const markdown = require("@darekkay/11ty/lib/markdown");
+const { applySharedConfig, markdown } = require("@darekkay/11ty");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (config) {
+  applySharedConfig(config);
 
   // markdown setup
-  const markdownLib = markdownIt({
-    html: true,
-    highlight: markdown.highlight()
-  })
+  const markdownLib = markdown
+    .markdownIt({
+      html: true,
+      highlight: markdown.highlight(),
+    })
     .use(...markdown.pluginStripH1())
-    .use(...markdown.pluginExternalLinks())
     .use(...markdown.pluginRelativeGitHubLinks())
-    .use(...markdown.pluginHeadlineAnchors());
-  eleventyConfig.setLibrary("md", markdownLib);
+    .use(
+      ...markdown.pluginHeadlineAnchors({
+        spriteUrl: "/assets/icons/sprite.svg",
+      })
+    );
+  config.setLibrary("md", markdownLib);
 
   // copy assets
-  eleventyConfig.addPassthroughCopy({ "node_modules/@darekkay/styles/dist/css/styles.css": "assets/styles.css" });
-  eleventyConfig.addPassthroughCopy({ "src/assets/src/assets/favicon.ico": "assets/favicon.ico" });
+  config.addPassthroughCopy({ "src/assets/dist/": "assets/" });
 
   return {
     dir: {
       input: "README.md",
       output: "docs",
-      includes: "node_modules/@darekkay/11ty/lib/includes"
-    }
+      includes: "node_modules/@darekkay/11ty/lib/includes",
+      layouts: "node_modules/@darekkay/11ty/lib/layouts",
+    },
   };
 };

@@ -4,6 +4,7 @@ node_modules
 /dist
 /build
 /public
+/src/assets/dist
 
 /docs
 /evaluatory-results

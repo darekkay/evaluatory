@@ -8,8 +8,8 @@
   <link rel="shortcut icon" href="assets/favicon.ico">
   <title>Evaluatory results</title>
   <style>
-    td a {
-      word-break: break-all;
+    main {
+      max-width: 1000px;
     }
   </style>
 </head>
@@ -37,7 +37,7 @@
       {% endfor %}
       </tbody>
     </table>
-    <p>
+    <p class="text-center">
       <small>Last generated: {{ lastGenerated }}</small>
     </p>
   </main>

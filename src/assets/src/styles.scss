@@ -1,13 +1,6 @@
 @import "../../../node_modules/@darekkay/styles/src/all";
-
-main {
-  max-width: 1000px;
-}
-
-table {
-  width: 100%;
-  max-width: 100%;
-}
+@import "../../../node_modules/@darekkay/styles/src/vendor/highlightjs/all";
+@import "../../../node_modules/@darekkay/styles/src/vendor/prismjs/all";
 
 section {
   padding-bottom: 2rem;
@@ -35,6 +28,8 @@ img {
 
 .icon-severity {
   margin-right: 0.5rem;
+  width: 1.6rem;
+  height: 1.6rem;
 }
 .icon-severity-minor {
   color: $cyan-vivid-20;

@@ -20,6 +20,7 @@ module.exports = function (config) {
   config.addPassthroughCopy({ "src/assets/dist/": "assets/" });
 
   return {
+    pathPrefix: "/evaluatory/",
     dir: {
       input: "README.md",
       output: "docs",

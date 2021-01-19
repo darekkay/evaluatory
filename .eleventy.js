@@ -12,7 +12,9 @@ module.exports = function (config) {
     .use(...markdown.pluginStripH1())
     .use(...markdown.pluginRelativeGitHubLinks())
     .use(
-      ...markdown.pluginHeadlineAnchors({})
+      ...markdown.pluginHeadlineAnchors({
+        spriteUrl: "./assets/icons/sprite.svg"
+      })
     );
   config.setLibrary("md", markdownLib);
 

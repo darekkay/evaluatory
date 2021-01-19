@@ -8,10 +8,6 @@
   <li>View <a href="{{ jsonFileName }}">JSON results</a></li>
 </ul>
 
-<div hidden>
-  {% include "../../assets/dist/icons/sprite.svg" %}
-</div>
-
 {% for violation in violations %}
   <section>
     <h3><svg class="icon icon-severity {{ violation.icon }}" role="img" aria-hidden="true"><use xlink:href="#{{ violation.icon }}"></use></svg> {{ violation.description }}</h3>

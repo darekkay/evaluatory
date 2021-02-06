@@ -9,6 +9,10 @@
 - :rocket: Display total number of issues in CLI.
 - :rocket: Use a consistent date format.
 
+## [1.4.3] - 2021-01-19
+
+- :gem: Update anchor links.
+
 ## [1.4.2] - 2021-01-14
 
 - :rocket: Add anchor links to the result page.

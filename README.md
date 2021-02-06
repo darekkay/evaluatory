@@ -18,6 +18,12 @@ This project uses a modular architecture, so in the long term it could become an
 
 Check out a demo results page at [https://darekkay.com/evaluatory/demo/](https://darekkay.com/evaluatory/demo/).
 
+## Modules
+
+- **axe-core**: Checks for accessibility issues using [axe-core](https://github.com/dequelabs/axe-core).
+- **html-validate**: Validates the HTML using [html-validate](https://html-validate.org).
+- **screenshot**: Takes a screenshot of the page.
+
 ## Installation
 
 This tool requires Node.js version 12+.

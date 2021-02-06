@@ -17,7 +17,8 @@ const executeForSingleUrl = async ({ modules, url, ...parameters }) => {
     browser = await webkit.launch();
     const context = await browser.newContext();
     const page = await context.newPage();
-    await page.goto(url);
+    const response = await page.goto(url);
+    const pageSource = await response.text();
 
     for (const module of modules) {
       // run all modules sequentially to prevent concurrency issues
@@ -28,6 +29,7 @@ const executeForSingleUrl = async ({ modules, url, ...parameters }) => {
           ...parameters,
           moduleName: module.name,
           page,
+          pageSource,
         });
         htmlParts.push(moduleResults.html);
         issueCount += moduleResults.issueCount;

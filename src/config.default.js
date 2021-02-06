@@ -42,5 +42,11 @@ module.exports = {
         // https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md
       },
     },
+
+    "html-validate": {
+      // https://html-validate.org/usage/index.html#configuration
+      extends: ["html-validate:recommended", "html-validate:document"],
+      rules: {},
+    },
   },
 };

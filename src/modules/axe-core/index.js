@@ -43,7 +43,7 @@ module.exports = async ({ page, moduleName, index, config }) => {
       ({ moduleConfig }) => {
         return window.axe.run(window.document, moduleConfig);
       },
-      { moduleConfig: config.modulesConfig["axe-core"] }
+      { moduleConfig: config.modulesConfig[moduleName] }
     );
 
     violationsPerDevice[deviceName] = axeResults.violations;

@@ -1,0 +1,20 @@
+{% set anchorId = "module-html-validate" %}
+<h2 id="{{ anchorId }}">{% include "../../includes/anchor-link.njk" %} html-validate</h2>
+
+<ul>
+  <li>
+    <strong class="{{ 'issue' if issueCount > 0 }}">{{ issueCount }} violation(s)</strong>
+  </li>
+  <li>View <a href="{{ jsonFileName }}">JSON results</a></li>
+</ul>
+
+{% for violation in violations %}
+  <section>
+    <h3><svg class="icon icon-severity icon-severity-serious" role="img" aria-hidden="true"><use xlink:href="#icon-severity-serious"></use></svg> {{ violation.message }}</h3>
+    <p>Violated
+      <a href="https://html-validate.org/rules/{{ violation.ruleId }}.html" target="_blank" rel="noopener">{{ violation.ruleId }}</a>
+      {% if violation.selector %}
+        {% code "css" %}{{ violation.selector | safe }} {}{% endcode %}
+      {% endif %}
+  </section>
+{% endfor %}

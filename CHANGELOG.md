@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :sparkles: Add `html-validate` module for HTML validation.
+
 ## [1.4.2] - 2021-01-14
 
 - :rocket: Add anchor links to the result page.

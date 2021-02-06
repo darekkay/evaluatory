@@ -11,7 +11,7 @@ module.exports = {
   maxConnections: 5,
 
   // Modules to run
-  modules: ["axe-core", "screenshot"],
+  modules: ["axe-core", "html-validate", "screenshot"],
 
   // Open the results page after evaluation
   openResults: true,

@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :rocket: Add `html-validate` to default modules.
+
 ## [1.5.0] - 2021-02-06
 
 - :sparkles: Add `html-validate` module for HTML validation.

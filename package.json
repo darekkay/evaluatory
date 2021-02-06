@@ -61,9 +61,10 @@
     "axe-core",
     "evaluate",
     "inspect",
+    "lint",
     "monitor",
-    "scan",
-    "verify"
+    "validator",
+    "playwright"
   ],
   "license": "MIT",
   "main": "bin/evaluatory.js",

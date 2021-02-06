@@ -15,6 +15,9 @@
   // Max number of parallel connections
   maxConnections: 5,
 
+  // Return exit code 1 in case of any error/issue (useful for CI environments)
+  shouldFailOnIssue: false,
+
   modulesConfig: {
     "axe-core": {
       rules: {

@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - :sparkles: Add `html-validate` module for HTML validation.
+- :rocket: Add option `shouldFailOnIssue` to use exit status 1 in case of any error or validation issue (useful for CI environments).
 - :rocket: Add a table of contents to the result page.
 - :rocket: Display total number of issues in CLI.
 - :rocket: Use a consistent date format.

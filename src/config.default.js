@@ -34,6 +34,9 @@ module.exports = {
     },
   ],
 
+  // Return exit code 1 in case of any error/issue (useful for CI environments)
+  shouldFailOnIssue: false,
+
   // Module configuration
   modulesConfig: {
     "axe-core": {

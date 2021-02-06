@@ -123,6 +123,8 @@ const execute = async (config) => {
   if (config.openResults) {
     await open(join(config.output, "index.html"));
   }
+
+  return { totalIssueCount };
 };
 
 module.exports = execute;

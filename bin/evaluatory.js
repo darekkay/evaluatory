@@ -37,10 +37,20 @@ async function main() {
     process.exit(1);
   }
 
+  let isFailure = false;
+
   try {
-    await execute(config);
+    const { totalIssueCount } = await execute(config);
+    if (totalIssueCount > 0) {
+      isFailure = true;
+    }
   } catch (error) {
     logger.error(error);
+    isFailure = true;
+  }
+
+  if (config.shouldFailOnIssue && isFailure) {
+    process.exit(1);
   }
 }
 

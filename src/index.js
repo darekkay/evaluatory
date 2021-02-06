@@ -95,11 +95,25 @@ const execute = async (config) => {
     executeForSingleUrl
   );
 
+  // group results by fail/success
+
+  const groupedResults = results.reduce(
+    (accumulator, result) => {
+      if (result.issueCount > 0) {
+        accumulator.fail.push(result);
+      } else {
+        accumulator.success.push(result);
+      }
+      return accumulator;
+    },
+    { fail: [], success: [] }
+  );
+
   // create an index file
   await renderToFile(
     join(__dirname, "templates", "index.njk"),
     {
-      results,
+      results: groupedResults,
       lastGenerated: dayjs().format("YYYY-MM-DD HH:mm:ss"),
     },
     join(config.output, "index.html")

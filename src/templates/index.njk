@@ -18,25 +18,70 @@
   <header class="inverted">
     <h1>Evaluatory results</h1>
   </header>
+
+  <div hidden>
+    {% include "../assets/dist/icons/sprite.svg" %}
+  </div>
+
   <main>
-    <table>
-      <thead>
-      <tr>
-        <th>URL</th>
-        <th>Issues</th>
-        <th>Results</th>
-      </tr>
-      </thead>
-      <tbody>
-      {% for result in results %}
+    {% if results.fail.length > 0 %}
+
+      <h2 class="text-center">
+        <svg class="icon icon-severity icon-severity-critical" role="img" aria-hidden="true">
+          <use xlink:href="#icon-severity-critical"></use>
+        </svg>
+        Failure
+      </h2>
+      <table>
+        <thead>
         <tr>
-          <td><a href="{{ result.url }}">{{ result.url }}</a></td>
-          <td class="no-wrap {{ 'issue' if result.issueCount > 0 }}">{{ result.issueCount }} issues</td>
-          <td><a href="{{ result.fileName }}">Results</a></td>
+          <th>URL</th>
+          <th>Issues</th>
+          <th>Results</th>
         </tr>
-      {% endfor %}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+        {% for result in results.fail %}
+          <tr>
+            <td><a href="{{ result.url }}">{{ result.url }}</a></td>
+            <td class="no-wrap {{ 'issue' if result.issueCount > 0 }}">{{ result.issueCount }} issues</td>
+            <td><a href="{{ result.fileName }}">Results</a></td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+    {% endif %}
+
+    {% if results.success.length > 0 %}
+
+      <h2 class="text-center">
+        <svg class="icon icon-severity icon-severity-success" role="img" aria-hidden="true">
+          <use xlink:href="#icon-severity-success"></use>
+        </svg>
+        Success
+      </h2>
+      <table>
+        <thead>
+        <tr>
+          <th>URL</th>
+          <th>Issues</th>
+          <th>Results</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for result in results.success %}
+          <tr>
+            <td><a href="{{ result.url }}">{{ result.url }}</a></td>
+            <td class="no-wrap {{ 'issue' if result.issueCount > 0 }}">{{ result.issueCount }} issues</td>
+            <td><a href="{{ result.fileName }}">Results</a></td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+    {% endif %}
+
     <p class="text-center">
       <small>Last generated: {{ lastGenerated }}</small>
     </p>

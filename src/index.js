@@ -108,7 +108,16 @@ const execute = async (config) => {
   await copy(join(__dirname, "assets", "dist"), join(config.output, "assets"));
 
   logger.info(`Saved results to: ${resolve(config.output)}`);
-  logger.success("Finished evaluation.");
+
+  const totalIssueCount = results.reduce(
+    (accumulator, result) => accumulator + result.issueCount,
+    0
+  );
+  if (totalIssueCount === 0) {
+    logger.success(`Finished evaluation: no issues found.`);
+  } else {
+    logger.error(`Finished evaluation: ${totalIssueCount} issues found.`);
+  }
 
   if (config.openResults) {
     await open(join(config.output, "index.html"));

@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.5.0] - 2021-02-06
+
 - :sparkles: Add `html-validate` module for HTML validation.
 - :rocket: Separate failed from successful results.
 - :rocket: Add option `shouldFailOnIssue` to use exit status 1 in case of any error or validation issue (useful for CI environments).
@@ -54,7 +56,7 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/evaluatory/compare/1.4.2...HEAD
+[Unreleased]: https://github.com/darekkay/evaluatory/compare/1.5.0...HEAD
 [1.4.2]: https://github.com/darekkay/evaluatory/compare/1.4.1...1.4.2
 [1.4.1]: https://github.com/darekkay/evaluatory/compare/1.4.0...1.4.1
 [1.4.0]: https://github.com/darekkay/evaluatory/compare/1.3.1...1.4.0
@@ -64,3 +66,5 @@
 [1.2.0]: https://github.com/darekkay/evaluatory/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/darekkay/evaluatory/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/darekkay/evaluatory/compare/tag/1.0.0
+
+[1.5.0]: https://github.com/darekkay/evaluatory/compare/1.4.3...1.5.0

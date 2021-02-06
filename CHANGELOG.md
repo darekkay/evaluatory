@@ -5,6 +5,7 @@
 - :sparkles: Add `html-validate` module for HTML validation.
 - :rocket: Add a table of contents to the result page.
 - :rocket: Display total number of issues in CLI.
+- :rocket: Use a consistent date format.
 
 ## [1.4.2] - 2021-01-14
 

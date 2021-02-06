@@ -4,6 +4,7 @@ const { webkit } = require("playwright");
 const asyncPool = require("tiny-async-pool");
 const { emptyDir, copy } = require("fs-extra");
 const open = require("open");
+const dayjs = require("dayjs");
 const logger = require("@darekkay/logger");
 
 const { renderToFile } = require("./utils/render");
@@ -99,7 +100,7 @@ const execute = async (config) => {
     join(__dirname, "templates", "index.njk"),
     {
       results,
-      lastGenerated: new Date().toLocaleString(),
+      lastGenerated: dayjs().format("YYYY-MM-DD HH:mm:ss"),
     },
     join(config.output, "index.html")
   );

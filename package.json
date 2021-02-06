@@ -28,7 +28,6 @@
     "tiny-async-pool": "1.1.0"
   },
   "devDependencies": {
-    "@darekkay/11ty": "1.6.0",
     "@darekkay/eslint-config": "2.4.0",
     "@darekkay/gulp": "1.4.0",
     "@darekkay/styles": "2.3.0",
@@ -80,9 +79,7 @@
     "dev:debug": "node bin/evaluatory.js --config config.example.json5 --verbose",
     "dev:server": "hs -p 9005 mock/",
     "dev:eleventy": "eleventy --serve --quiet",
-    "docs": "run-s clean docs:eleventy docs:demo",
-    "docs:demo": "node bin/evaluatory.js --config config.demo.json5 --no-open-results --output docs/demo",
-    "docs:eleventy": "eleventy --quiet",
+    "docs": "node bin/evaluatory.js --config config.demo.json5 --no-open-results --output docs/demo",
     "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",

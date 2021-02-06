@@ -6,11 +6,12 @@
 
 Web page evaluation with a focus on accessibility.
 
-Currently, it is mainly a wrapper around [axe-core](https://github.com/dequelabs/axe-core), which tests a website for accessibility issues.
+Evaluatory is mainly a wrapper around [axe-core](https://github.com/dequelabs/axe-core) and [html-validate](https://html-validate.org), which tests a website for accessibility and markup issues.
+
 Evaluatory comes with two essential improvements:
 
-- Run checks at multiple breakpoints at the same time (e.g. mobile, tablet and desktop). Some accessibility issues are only applicable to certain breakpoints.
-- Provide a visual HTML results page.
+- Run checks at **multiple breakpoints** at the same time (e.g. mobile, tablet and desktop). Some accessibility issues are only applicable to certain breakpoints.
+- Provide a **visual HTML results page**.
 
 This project uses a modular architecture, so in the long term it could become an alternative to tools like [webhint](https://webhint.io).
 
@@ -90,7 +91,7 @@ $ evaluatory -c config.json
 
 ## Configuration
 
-The configuration is a valid JSON5 file. See [config.example.json5](config.example.json5) for an example (incl. option descriptions).
+The configuration is a valid JSON5 file. See [config.example.json5](https://github.com/darekkay/evaluatory/blob/master/config.example.json5) for an example and [config.default.js](https://github.com/darekkay/evaluatory/blob/master/src/config.default.js) for default values.
 
 ## License
 

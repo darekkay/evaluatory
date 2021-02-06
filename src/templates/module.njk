@@ -22,6 +22,12 @@
     <p><a href="index.html">← Back</a></p>
     <p>Results for: <a href="{{ url }}" target="_blank" rel="noopener">{{ url }}</a></p>
 
+    <ul>
+      {% for module in modules %}
+        <li><a href="#module-{{ module.name }}">{{ module.name }}</a></li>
+      {% endfor %}
+    </ul>
+
     {% for result in results %}
       {{ result | safe }}
       <hr>

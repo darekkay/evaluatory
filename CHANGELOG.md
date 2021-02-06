@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - :sparkles: Add `html-validate` module for HTML validation.
+- :rocket: Add a table of contents to the result page.
 
 ## [1.4.2] - 2021-01-14
 

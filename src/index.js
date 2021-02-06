@@ -43,7 +43,7 @@ const executeForSingleUrl = async ({ modules, url, ...parameters }) => {
     // concatenate all HTML results into a single results file
     await renderToFile(
       join(__dirname, "templates", "module.njk"),
-      { url, results: htmlParts },
+      { url, modules, results: htmlParts },
       join(parameters.config.output, `${parameters.index}.html`)
     );
   } catch (error) {

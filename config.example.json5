@@ -28,7 +28,6 @@
     },
 
     "html-validate":{
-      // by default, "recommended" and "document" rules are enabled
       // https://html-validate.org/usage/index.html#configuration
     }
   },

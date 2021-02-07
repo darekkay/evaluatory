@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :rocket: Provide sane defaults for `html-validate`.
+
 ## [1.5.1] - 2021-02-06
 
 - :rocket: Add `html-validate` to default modules.

@@ -49,7 +49,20 @@ module.exports = {
     "html-validate": {
       // https://html-validate.org/usage/index.html#configuration
       extends: ["html-validate:recommended", "html-validate:document"],
-      rules: {},
+      rules: {
+        "attribute-empty-style": "off",
+        "attribute-boolean-style": "off",
+        "no-inline-style": "off",
+        "no-trailing-whitespace": "off",
+        "no-raw-characters": [
+          "error",
+          {
+            relaxed: true,
+          },
+        ],
+        "require-sri": "off",
+        "svg-focusable": "off",
+      },
     },
   },
 };

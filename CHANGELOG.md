@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :rocket: Provide even more sane defaults for `html-validate`.
+
 ## [1.5.2] - 2021-02-07
 
 - :rocket: Provide sane defaults for `html-validate`.

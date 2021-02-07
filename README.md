@@ -4,13 +4,11 @@
 [![Build](https://img.shields.io/github/workflow/status/darekkay/evaluatory/Continuous%20Integration/master?style=flat-square)](https://github.com/darekkay/evaluatory/actions)
 [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/darekkay/evaluatory/blob/master/LICENSE)
 
-Web page evaluation with a focus on accessibility.
-
-Evaluatory is mainly a wrapper around [axe-core](https://github.com/dequelabs/axe-core) and [html-validate](https://html-validate.org), which tests a website for accessibility and markup issues.
+Evaluatory is an [open-source](https://github.com/darekkay/evaluatory) tool for website validation. It is mainly a wrapper around [axe-core](https://github.com/dequelabs/axe-core) and [html-validate](https://html-validate.org), which test a website for accessibility and markup issues.
 
 Evaluatory comes with two essential improvements:
 
-- Run checks at **multiple breakpoints** at the same time (e.g. mobile, tablet and desktop). Some accessibility issues are only applicable to certain breakpoints.
+- Run checks at **multiple breakpoints** at the same time (e.g. mobile, tablet and desktop). Some accessibility issues appear only at a certain breakpoint.
 - Provide a **visual HTML results page**.
 
 This project uses a modular architecture, so in the long term it could become an alternative to tools like [webhint](https://webhint.io).

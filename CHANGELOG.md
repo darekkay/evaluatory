@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.5.3] - 2021-02-09
+
 - :rocket: Provide even more sane defaults for `html-validate`.
 
 ## [1.5.2] - 2021-02-07
@@ -66,7 +68,8 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/evaluatory/compare/1.5.2...HEAD
+[Unreleased]: https://github.com/darekkay/evaluatory/compare/1.5.3...HEAD
+[1.5.3]: https://github.com/darekkay/evaluatory/compare/1.5.2...1.5.3
 [1.5.2]: https://github.com/darekkay/evaluatory/compare/1.5.1...1.5.2
 [1.5.1]: https://github.com/darekkay/evaluatory/compare/1.5.0...1.5.1
 [1.5.0]: https://github.com/darekkay/evaluatory/compare/1.4.3...1.5.0

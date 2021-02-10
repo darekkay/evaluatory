@@ -21,4 +21,5 @@ package-lock.json
 
 /docs
 /evaluatory-results
+/share
 *.local.json*

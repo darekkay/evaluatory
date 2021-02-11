@@ -109,11 +109,18 @@ const execute = async (config) => {
     { fail: [], success: [] }
   );
 
+  const totalIssueCount = results.reduce(
+    (accumulator, result) => accumulator + result.issueCount,
+    0
+  );
+
   // create an index file
   await renderToFile(
     join(__dirname, "templates", "index.njk"),
     {
       results: groupedResults,
+      totalUrlCount: config.urls.length,
+      totalIssueCount,
       lastGenerated: dayjs().format("YYYY-MM-DD HH:mm:ss"),
     },
     join(config.output, "index.html")
@@ -124,10 +131,6 @@ const execute = async (config) => {
 
   logger.info(`Saved results to: ${resolve(config.output)}`);
 
-  const totalIssueCount = results.reduce(
-    (accumulator, result) => accumulator + result.issueCount,
-    0
-  );
   if (totalIssueCount === 0) {
     logger.success(`Finished evaluation: no issues found.`);
   } else {

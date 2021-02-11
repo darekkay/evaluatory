@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :rocket: Add result count.
+
 ## [1.5.3] - 2021-02-09
 
 - :rocket: Provide even more sane defaults for `html-validate`.

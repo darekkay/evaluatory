@@ -30,7 +30,7 @@
         <svg class="icon icon-severity icon-severity-critical" role="img" aria-hidden="true">
           <use xlink:href="#icon-severity-critical"></use>
         </svg>
-        Failure
+        Failure {% if totalUrlCount > 1 %}<span class="text-offset">({{ results.fail.length }}/{{ totalUrlCount }})</span>{% endif %}
       </h2>
       <table>
         <thead>
@@ -44,13 +44,15 @@
         {% for result in results.fail %}
           <tr>
             <td><a href="{{ result.url }}">{{ result.url }}</a></td>
-            <td class="no-wrap {{ 'issue' if result.issueCount > 0 }}">{{ result.issueCount }} issues</td>
+            <td class="no-wrap {{ 'issue' if result.issueCount > 0 }}">{{ result.issueCount }} issue{% if result.issueCount !== 1 %}s{% endif %}</td>
             <td><a href="{{ result.fileName }}">Results</a></td>
           </tr>
         {% endfor %}
         </tbody>
       </table>
 
+      <p class="text-center">Found <strong class="issue">{{ totalIssueCount }} issue{% if totalIssueCount !== 1 %}s{% endif %}</strong> in total.</p>
+      <hr>
     {% endif %}
 
     {% if results.success.length > 0 %}
@@ -59,7 +61,7 @@
         <svg class="icon icon-severity icon-severity-success" role="img" aria-hidden="true">
           <use xlink:href="#icon-severity-success"></use>
         </svg>
-        Success
+        Success {% if totalUrlCount > 1 %}<span class="text-offset">({{ results.success.length }}/{{ totalUrlCount }})</span>{% endif %}
       </h2>
       <table>
         <thead>
@@ -73,13 +75,14 @@
         {% for result in results.success %}
           <tr>
             <td><a href="{{ result.url }}">{{ result.url }}</a></td>
-            <td class="no-wrap {{ 'issue' if result.issueCount > 0 }}">{{ result.issueCount }} issues</td>
+            <td class="no-wrap">0 issues</td>
             <td><a href="{{ result.fileName }}">Results</a></td>
           </tr>
         {% endfor %}
         </tbody>
       </table>
 
+      <hr>
     {% endif %}
 
     <p class="text-center">

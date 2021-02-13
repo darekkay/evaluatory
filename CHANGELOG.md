@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - :rocket: Add result count.
+- :rocket: Include tested URL in page title.
 
 ## [1.5.3] - 2021-02-09
 

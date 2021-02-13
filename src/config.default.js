@@ -55,13 +55,10 @@ module.exports = {
         "attribute-boolean-style": "off",
         "attribute-empty-style": "off",
         "element-case": "off",
+        "element-permitted-content": "off", // too strict
+        "element-required-attributes": "off", // too many false-positives
         "no-inline-style": "off",
-        "no-raw-characters": [
-          "error",
-          {
-            relaxed: true,
-          },
-        ],
+        "no-raw-characters": "off", // too many false-positives
         "no-self-closing": "off",
         "no-trailing-whitespace": "off",
         "require-sri": "off",

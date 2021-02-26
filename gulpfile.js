@@ -10,18 +10,18 @@ const config = {
 
     assets: [
       {
-        source: path("src", "assets", "src", "assets"),
+        source: `${path("src", "assets", "src", "assets")}/**/*`,
         destination: path("src", "assets", "dist"),
       },
       {
-        source: path(
+        source: `${path(
           "node_modules",
           "@darekkay",
           "styles",
           "dist",
           "css",
           "fonts"
-        ),
+        )}/**/*`,
         destination: path("src", "assets", "dist", "fonts"),
       },
     ],

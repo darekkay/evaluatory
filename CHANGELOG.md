@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :hammer: Update dependencies.
+
 ## [1.5.4] - 2021-02-13
 
 - :rocket: Add result count.

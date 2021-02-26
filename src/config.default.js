@@ -51,9 +51,11 @@ module.exports = {
       extends: ["html-validate:recommended"],
       rules: {
         "attr-case": "off",
+        "attr-spacing": "off",
         "attr-quotes": "off",
         "attribute-boolean-style": "off",
         "attribute-empty-style": "off",
+        "doctype-style": "off",
         "element-case": "off",
         "element-permitted-content": "off", // too strict
         "element-required-attributes": "off", // too many false-positives
@@ -61,6 +63,7 @@ module.exports = {
         "no-raw-characters": "off", // too many false-positives
         "no-self-closing": "off",
         "no-trailing-whitespace": "off",
+        "no-utf8-bom": "off",
         "require-sri": "off",
         "svg-focusable": "off",
         "void-style": "off",

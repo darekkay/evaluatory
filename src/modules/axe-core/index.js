@@ -4,6 +4,7 @@ const _ = require("lodash");
 const { readFile, existsSync, outputJson } = require("fs-extra");
 const { join } = require("path");
 const logger = require("@darekkay/logger");
+const moduleVersion = require("axe-core/package.json").version;
 
 const { render } = require("../../utils/render");
 
@@ -97,6 +98,7 @@ module.exports = async ({ page, moduleName, index, config }) => {
   const html = await render(join(__dirname, "template.njk"), {
     violations,
     issueCount,
+    moduleVersion,
     jsonFileName,
   });
 

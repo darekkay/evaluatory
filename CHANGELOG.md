@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- :rocket: Display module versions.
 - :hammer: Update dependencies.
 
 ## [1.5.4] - 2021-02-13

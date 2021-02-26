@@ -2,6 +2,7 @@ const { join } = require("path");
 const { outputJson } = require("fs-extra");
 
 const { HtmlValidate } = require("html-validate");
+const moduleVersion = require("html-validate/package.json").version;
 
 const { render } = require("../../utils/render");
 
@@ -22,6 +23,7 @@ module.exports = async ({ pageSource, moduleName, index, config }) => {
   const html = await render(join(__dirname, "template.njk"), {
     violations,
     issueCount,
+    moduleVersion,
     jsonFileName,
   });
 

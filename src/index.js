@@ -9,33 +9,42 @@ const logger = require("@darekkay/logger");
 
 const { renderToFile } = require("./utils/render");
 
-const executeForSingleUrl = async ({ modules, url, ...parameters }) => {
+const executeForSingleUrl = async ({ config, modules, url, ...parameters }) => {
   const resultsFileName = `${parameters.index}.html`;
   const htmlParts = [];
   let issueCount = 0;
   let browser;
+  let responseError;
   try {
     browser = await webkit.launch();
     const context = await browser.newContext();
     const page = await context.newPage();
     const response = await page.goto(url);
-    const pageSource = await response.text();
+    const responseStatus = response.status();
 
-    for (const module of modules) {
-      // run all modules sequentially to prevent concurrency issues
-      logger.info(`Running [${module.name}] for ${url}`);
+    if (config.handleHttpErrorCodes && responseStatus >= 400) {
+      responseError = responseStatus;
+      logger.error(`Error status [${responseStatus}] returned for ${url}`);
+    } else {
+      const pageSource = await response.text();
 
-      try {
-        const moduleResults = await module.execute({
-          ...parameters,
-          moduleName: module.name,
-          page,
-          pageSource,
-        });
-        htmlParts.push(moduleResults.html);
-        issueCount += moduleResults.issueCount;
-      } catch (error) {
-        logger.error(`Error executing module [${module.name}]`, error);
+      for (const module of modules) {
+        // run all modules sequentially to prevent concurrency issues
+        logger.info(`Running [${module.name}] for ${url}`);
+
+        try {
+          const moduleResults = await module.execute({
+            ...parameters,
+            moduleName: module.name,
+            config,
+            page,
+            pageSource,
+          });
+          htmlParts.push(moduleResults.html);
+          issueCount += moduleResults.issueCount;
+        } catch (error) {
+          logger.error(`Error executing module [${module.name}]`, error);
+        }
       }
     }
 
@@ -45,15 +54,20 @@ const executeForSingleUrl = async ({ modules, url, ...parameters }) => {
     await renderToFile(
       join(__dirname, "templates", "module.njk"),
       { url, modules, results: htmlParts },
-      join(parameters.config.output, `${parameters.index}.html`)
+      join(config.output, `${parameters.index}.html`)
     );
   } catch (error) {
-    logger.error(error);
+    logger.error(error.message || error);
+    responseError = "exception";
     if (browser !== undefined) {
       await browser.close();
     }
   }
-  return { fileName: resultsFileName, url, issueCount };
+  if (responseError) {
+    issueCount = 1;
+  }
+
+  return { fileName: resultsFileName, url, responseError, issueCount };
 };
 
 const execute = async (config) => {

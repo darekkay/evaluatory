@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :rocket: Add `handleHttpErrorCodes` option to handle HTTP status codes above 400 as errors.
+- :rocket: Handle request errors.
 - :rocket: Display module versions.
 - :hammer: Update dependencies.
 

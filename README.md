@@ -89,7 +89,7 @@ $ evaluatory -c config.json
 
 ## Configuration
 
-The configuration is a valid JSON5 file. See [config.example.json5](https://github.com/darekkay/evaluatory/blob/master/config.example.json5) for an example and [config.default.js](https://github.com/darekkay/evaluatory/blob/master/src/config.default.js) for default values.
+The configuration is a valid JSON5 file. See [config.example.json5](https://github.com/darekkay/evaluatory/blob/master/config.example.json5) for an example and [config.default.js](https://github.com/darekkay/evaluatory/blob/master/src/config.default.js) for available options (with defaults).
 
 ## License
 

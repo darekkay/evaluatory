@@ -7,11 +7,11 @@ module.exports = {
   // URLs to evaluate
   urls: [],
 
-  // Max number of parallel connections
-  maxConnections: 5,
-
   // Modules to run
   modules: ["axe-core", "html-validate", "screenshot"],
+
+  // Max number of parallel connections
+  maxConnections: 5,
 
   // Open the results page after evaluation
   openResults: true,
@@ -33,6 +33,9 @@ module.exports = {
       },
     },
   ],
+
+  // Handles HTTP status codes above 400 as errors, i.e., evaluatory modules will not be executed.
+  handleHttpErrorCodes: true,
 
   // Return exit code 1 in case of any error/issue (useful for CI environments)
   shouldFailOnIssue: false,

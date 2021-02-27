@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.6.0] - 2021-02-27
+
 - :rocket: Add `handleHttpErrorCodes` option to handle HTTP status codes above 400 as errors.
 - :rocket: Handle request errors.
 - :rocket: Display module versions.
@@ -79,7 +81,8 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/evaluatory/compare/1.5.4...HEAD
+[Unreleased]: https://github.com/darekkay/evaluatory/compare/1.6.0...HEAD
+[1.6.0]: https://github.com/darekkay/evaluatory/compare/1.5.4...1.6.0
 [1.5.4]: https://github.com/darekkay/evaluatory/compare/1.5.3...1.5.4
 [1.5.3]: https://github.com/darekkay/evaluatory/compare/1.5.2...1.5.3
 [1.5.2]: https://github.com/darekkay/evaluatory/compare/1.5.1...1.5.2

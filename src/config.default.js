@@ -64,6 +64,7 @@ module.exports = {
         "element-required-attributes": "off", // too many false-positives
         "no-inline-style": "off",
         "no-raw-characters": "off", // too many false-positives
+        "no-redundant-role": "off",
         "no-self-closing": "off",
         "no-trailing-whitespace": "off",
         "no-utf8-bom": "off",

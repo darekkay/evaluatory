@@ -5,6 +5,7 @@
 - :rocket: Add `handleHttpErrorCodes` option to handle HTTP status codes above 400 as errors.
 - :rocket: Handle request errors.
 - :rocket: Display module versions.
+- :gem: Deemphasize the success/failure count.
 - :hammer: Update dependencies.
 
 ## [1.5.4] - 2021-02-13

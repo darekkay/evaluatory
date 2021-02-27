@@ -31,7 +31,7 @@
           <use xlink:href="#icon-severity-critical"></use>
         </svg>
         Failure {% if totalUrlCount > 1 %}
-          <span class="text-offset">({{ results.fail.length }}/{{ totalUrlCount }})</span>{% endif %}
+          <span class="text-offset font-normal">({{ results.fail.length }}/{{ totalUrlCount }})</span>{% endif %}
       </h2>
       <table>
         <thead>
@@ -74,7 +74,7 @@
           <use xlink:href="#icon-severity-success"></use>
         </svg>
         Success {% if totalUrlCount > 1 %}
-          <span class="text-offset">({{ results.success.length }}/{{ totalUrlCount }})</span>{% endif %}
+          <span class="text-offset font-normal">({{ results.success.length }}/{{ totalUrlCount }})</span>{% endif %}
       </h2>
       <table>
         <thead>

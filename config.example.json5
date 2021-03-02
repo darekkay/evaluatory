@@ -8,9 +8,18 @@
     "http://127.0.0.1:9005/example1.html",
     "http://127.0.0.1:9005/example2.html",
     "http://127.0.0.1:9005/example3.html",
-    "invalid-url"
+    "invalid-url",
   ],
 
   // Modules to run
   modules: ["axe-core", "html-validate", "screenshot"],
+
+  modulesConfig: {
+    "axe-core": {
+      runOnly: {
+        type: "tag",
+        values: ["wcag2a", "wcag2aa"],
+      },
+    },
+  },
 }

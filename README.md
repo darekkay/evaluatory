@@ -8,7 +8,7 @@ Evaluatory is an [open-source](https://github.com/darekkay/evaluatory) tool for 
 
 Evaluatory comes with two essential improvements:
 
-- Run checks at **multiple breakpoints** at the same time (e.g. mobile, tablet and desktop). Some accessibility issues appear only at a certain breakpoint.
+- Run checks at **multiple device breakpoints** at the same time (e.g. mobile, tablet and desktop). Some accessibility issues appear only at a certain breakpoint.
 - Provide a **visual HTML results page**.
 
 This project uses a modular architecture, so in the long term it could become an alternative to tools like [webhint](https://webhint.io).
@@ -22,6 +22,14 @@ Check out a demo results page at [https://darekkay.com/evaluatory/demo/](https:/
 - **axe-core**: Checks for accessibility issues using [axe-core](https://github.com/dequelabs/axe-core).
 - **html-validate**: Validates the HTML using [html-validate](https://html-validate.org).
 - **screenshot**: Takes a screenshot of the page.
+
+## Quickstart
+
+Run evaluatory with [default configuration](https://github.com/darekkay/evaluatory/blob/master/src/config.default.js) for a single URL:
+
+```shell
+npx evaluatory https://example.com
+```
 
 ## Installation
 

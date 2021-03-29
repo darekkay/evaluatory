@@ -1,39 +1,28 @@
-const { join } = require("path");
-
 const { gulp, tasks } = require("@darekkay/gulp");
-
-const path = (...args) => join(__dirname, ...args);
 
 const config = {
   paths: {
-    destination: path("src/assets/dist"),
+    destination: "src/assets/dist",
 
     assets: [
       {
-        source: `${path("src", "assets", "src", "assets")}/**/*`,
-        destination: path("src", "assets", "dist"),
+        source: "src/assets/src/assets/**/*",
+        destination: "src/assets/dist",
       },
       {
-        source: `${path(
-          "node_modules",
-          "@darekkay",
-          "styles",
-          "dist",
-          "css",
-          "fonts"
-        )}/**/*`,
-        destination: path("src", "assets", "dist", "fonts"),
+        source: "node_modules/@darekkay/styles/dist/css/fonts/**/*",
+        destination: "src/assets/dist/fonts",
       },
     ],
 
     styles: {
-      source: path("src", "assets", "src", "styles.scss"),
-      destination: path("src", "assets", "dist"),
+      source: "src/assets/src/styles.scss",
+      destination: "src/assets/dist",
     },
 
     icons: {
-      source: path("src", "assets", "icons"),
-      destination: path("src", "assets", "dist", "icons"),
+      source: "src/assets/icons/**/*.svg",
+      destination: "src/assets/dist/icons",
     },
   },
 };

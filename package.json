@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@darekkay/eslint-config": "2.4.0",
-    "@darekkay/gulp": "1.5.0",
+    "@darekkay/gulp": "1.6.3",
     "@darekkay/styles": "2.3.3",
     "cross-env": "7.0.3",
     "eslint": "7.17.0",

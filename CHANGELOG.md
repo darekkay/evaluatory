@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :hammer: Update dependencies.
+
 ## [1.6.0] - 2021-02-27
 
 - :rocket: Add `handleHttpErrorCodes` option to handle HTTP status codes above 400 as errors.

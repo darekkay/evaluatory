@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :sparkles: Make the browser configurable (Chromium, Firefox or Webkit).
+- :rocket: Use Chromium browser as default instead of Webkit. Webkit doesn't work for around 5% of tested pages (page timeout).
 - :hammer: Update dependencies.
 
 ## [1.6.0] - 2021-02-27

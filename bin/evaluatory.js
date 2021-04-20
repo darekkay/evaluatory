@@ -28,13 +28,11 @@ async function main() {
   logger.debug("Config", config);
 
   if (!config.modules.length) {
-    logger.error("Specify modules to execute.");
-    process.exit(1);
+    throw new Error("Specify modules to execute.");
   }
 
   if (!config.urls.length) {
-    logger.error("Specify URLs to evaluate.");
-    process.exit(1);
+    throw new Error("Specify URLs to evaluate.");
   }
 
   let isFailure = false;
@@ -54,4 +52,9 @@ async function main() {
   }
 }
 
-if (require.main === module) main();
+if (require.main === module) {
+  main().catch((error) => {
+    logger.error(error);
+    process.exit(1);
+  });
+}

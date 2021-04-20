@@ -6,10 +6,11 @@
 
 Evaluatory is an [open-source](https://github.com/darekkay/evaluatory) tool for website validation. It is mainly a wrapper around [axe-core](https://github.com/dequelabs/axe-core) and [html-validate](https://html-validate.org), which test a website for accessibility and markup issues.
 
-Evaluatory comes with two essential improvements:
+Evaluatory comes with some essential improvements:
 
 - Run checks at **multiple device breakpoints** at the same time (e.g. mobile, tablet and desktop). Some accessibility issues appear only at a certain breakpoint.
 - Provide a **visual HTML results page**.
+- Support for **sitemaps** to check all referenced web pages at once.
 
 This project uses a modular architecture, so in the long term it could become an alternative to tools like [webhint](https://webhint.io).
 

@@ -1,6 +1,6 @@
 const { join, resolve } = require("path");
 
-const { webkit } = require("playwright");
+const playwright = require("playwright");
 const asyncPool = require("tiny-async-pool");
 const { emptyDir, copy } = require("fs-extra");
 const open = require("open");
@@ -16,7 +16,8 @@ const executeForSingleUrl = async ({ config, modules, url, ...parameters }) => {
   let browser;
   let responseError;
   try {
-    browser = await webkit.launch();
+    browser = await playwright[config.browser].launch();
+    // TODO: log browser + version that is used: browser._initializer
     const context = await browser.newContext();
     const page = await context.newPage();
     const response = await page.goto(url);

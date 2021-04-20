@@ -61,6 +61,13 @@ const getConfig = async (cliArguments = {}) => {
     configArrayCustomizer
   );
 
+  if (!["chromium", "firefox", "webkit"].includes(config.browser)) {
+    // verify browser value
+    throw new Error(
+      `Unknown Playwright browser '${config.browser}'. Please use one of "chromium", "firefox" or "webkit".`
+    );
+  }
+
   if (config.sitemap) {
     const sitemapUrls = await getUrlsForSitemap(config.sitemap);
     if (sitemapUrls) {

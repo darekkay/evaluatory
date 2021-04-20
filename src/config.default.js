@@ -40,6 +40,9 @@ module.exports = {
   // Return exit code 1 in case of any error/issue (useful for CI environments)
   shouldFailOnIssue: false,
 
+  // Playwright browser to use. One of "chromium", "firefox" or "webkit".
+  browser: "chromium",
+
   // Module configuration
   modulesConfig: {
     "axe-core": {

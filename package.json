@@ -1,7 +1,7 @@
 {
   "name": "evaluatory",
   "description": "Web page evaluation with a focus on accessibility",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "author": "Darek Kay <hello@darekkay.com> (https://darekkay.com/)",
   "bin": {
     "evaluatory": "bin/evaluatory.js"

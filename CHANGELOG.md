@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.7.0] - 2021-04-21
+
 - :sparkles: Make the browser configurable (Chromium, Firefox or Webkit).
 - :rocket: Use Chromium browser as default instead of Webkit. Webkit doesn't work for around 5% of tested pages (page timeout).
 - :hammer: Update dependencies.
@@ -85,7 +87,8 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/evaluatory/compare/1.6.0...HEAD
+[Unreleased]: https://github.com/darekkay/evaluatory/compare/1.7.0...HEAD
+[1.7.0]: https://github.com/darekkay/evaluatory/compare/1.6.0...1.7.0
 [1.6.0]: https://github.com/darekkay/evaluatory/compare/1.5.4...1.6.0
 [1.5.4]: https://github.com/darekkay/evaluatory/compare/1.5.3...1.5.4
 [1.5.3]: https://github.com/darekkay/evaluatory/compare/1.5.2...1.5.3

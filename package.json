@@ -28,20 +28,10 @@
     "tiny-async-pool": "1.2.0"
   },
   "devDependencies": {
-    "@darekkay/eslint-config": "2.4.0",
     "@darekkay/gulp": "1.7.0",
+    "@darekkay/scripts": "1.3.1",
     "@darekkay/styles": "2.3.6",
-    "cross-env": "7.0.3",
-    "eslint": "7.17.0",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-jest": "24.1.3",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-prettier": "3.3.1",
-    "eslint-plugin-unicorn": "26.0.1",
     "http-server": "0.12.3",
-    "jest": "26.6.3",
-    "npm-run-all": "4.1.5",
-    "prettier": "2.2.1",
     "rimraf": "3.0.2"
   },
   "engines": {
@@ -62,8 +52,8 @@
     "inspect",
     "lint",
     "monitor",
-    "validator",
-    "playwright"
+    "playwright",
+    "validator"
   ],
   "license": "MIT",
   "main": "bin/evaluatory.js",
@@ -73,16 +63,15 @@
   },
   "scripts": {
     "build": "gulp build",
-    "ci": "cross-env CI=true npm run lint && npm run test",
+    "ci": "dks ci",
     "clean": "rimraf docs/",
     "dev": "node bin/evaluatory.js --config config.example.json5",
     "dev:debug": "node bin/evaluatory.js --config config.example.json5 --verbose",
     "dev:server": "hs -p 9005 mock/",
     "docs": "node bin/evaluatory.js --config config.demo.json5 --no-open-results --output docs/demo",
-    "format": "prettier --write .",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
+    "format": "dks format",
+    "lint": "dks lint",
     "prepublishOnly": "npm run ci",
-    "test": "jest"
+    "test": "dks test"
   }
 }

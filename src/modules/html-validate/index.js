@@ -1,6 +1,6 @@
 const { join } = require("path");
-const { outputJson } = require("fs-extra");
 
+const { outputJson } = require("fs-extra");
 const { HtmlValidate } = require("html-validate");
 const moduleVersion = require("html-validate/package.json").version;
 

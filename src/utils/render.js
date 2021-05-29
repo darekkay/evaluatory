@@ -1,6 +1,6 @@
 const { join } = require("path");
-const { outputFile } = require("fs-extra");
 
+const { outputFile } = require("fs-extra");
 const nunjucks = require("nunjucks");
 
 const env = nunjucks.configure([join(__dirname, "..")], { autoescape: true });

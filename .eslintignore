@@ -1,9 +1,16 @@
-node_modules
-/.git
-/.idea
-/dist
-/build
-/public
+node_modules/
+.idea/
+.git/
+public/
+dist/
+build/
+out/
+tmp/
+temp/
+coverage/
+storybook-static/
+
+*.min.js
 
 /docs
 /evaluatory-results

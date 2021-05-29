@@ -1,8 +1,9 @@
 /* eslint-env browser */
 
+const { join } = require("path");
+
 const _ = require("lodash");
 const { readFile, existsSync, outputJson } = require("fs-extra");
-const { join } = require("path");
 const logger = require("@darekkay/logger");
 const moduleVersion = require("axe-core/package.json").version;
 

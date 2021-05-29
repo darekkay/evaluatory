@@ -74,7 +74,7 @@ const getConfig = async (cliArguments = {}) => {
       logger.info(`Adding ${sitemapUrls.length} URLs from the sitemap.`);
     }
     // if a sitemap is provided, merge its content into the URLs
-    config.urls = (config.urls || []).concat(sitemapUrls);
+    config.urls = [...(config.urls || []), ...sitemapUrls];
   }
 
   return config;

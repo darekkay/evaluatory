@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :hammer: Update dependencies.
+
 ## [1.7.0] - 2021-04-21
 
 - :sparkles: Make the browser configurable (Chromium, Firefox or Webkit).

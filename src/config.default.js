@@ -8,10 +8,10 @@ module.exports = {
   urls: [],
 
   // Modules to run
-  modules: ["axe-core", "html-validate", "screenshot"],
+  modules: ["lighthouse", "axe-core", "html-validate", "screenshot"],
 
   // Max number of parallel connections
-  maxConnections: 5,
+  maxConnections: 1,
 
   // Open the results page after evaluation
   openResults: true,

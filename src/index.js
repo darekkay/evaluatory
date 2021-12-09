@@ -16,7 +16,9 @@ const executeForSingleUrl = async ({ config, modules, url, ...parameters }) => {
   let browser;
   let responseError;
   try {
-    browser = await playwright[config.browser].launch();
+    browser = await playwright[config.browser].launch({
+      args: ["--remote-debugging-port=9222"],
+    });
     // TODO: log browser + version that is used: browser._initializer
     const context = await browser.newContext();
     const page = await context.newPage();

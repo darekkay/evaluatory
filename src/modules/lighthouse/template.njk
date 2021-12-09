@@ -1,0 +1,9 @@
+{% set anchorId = "module-lighthouse" %}
+<h2 id="{{ anchorId }}">{% include "../../includes/anchor-link.njk" %} lighthouse <span class="module-version text-offset">{{ moduleVersion }}</span></h2>
+
+<ul>
+  <li>
+    <strong class="{{ 'issue' if issueCount > 0 }}">{{ issueCount }} violation(s)</strong>
+  </li>
+  <li>View <a href="{{ jsonFileName }}">JSON results</a></li>
+</ul>

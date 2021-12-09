@@ -11,8 +11,10 @@
     "invalid-url",
   ],
 
+  maxConnections: 1,
+
   // Modules to run
-  modules: ["axe-core", "html-validate", "screenshot"],
+  modules: ["lighthouse" ,"axe-core", "html-validate", "screenshot"],
 
   modulesConfig: {
     "axe-core": {

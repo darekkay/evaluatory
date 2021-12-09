@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.7.1] - 2021-12-09
+
 - :hammer: Update dependencies.
 
 ## [1.7.0] - 2021-04-21
@@ -89,7 +91,8 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/evaluatory/compare/1.7.0...HEAD
+[Unreleased]: https://github.com/darekkay/evaluatory/compare/1.7.1...HEAD
+[1.7.1]: https://github.com/darekkay/evaluatory/compare/1.7.0...1.7.1
 [1.7.0]: https://github.com/darekkay/evaluatory/compare/1.6.0...1.7.0
 [1.6.0]: https://github.com/darekkay/evaluatory/compare/1.5.4...1.6.0
 [1.5.4]: https://github.com/darekkay/evaluatory/compare/1.5.3...1.5.4

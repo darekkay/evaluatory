@@ -18,7 +18,7 @@ const executeForSingleUrl = async ({ config, modules, url, ...parameters }) => {
   try {
     browser = await playwright[config.browser].launch();
     // TODO: log browser + version that is used: browser._initializer
-    const context = await browser.newContext();
+    const context = await browser.newContext(config.playwrightOptions);
     const page = await context.newPage();
     const response = await page.goto(url);
     const responseStatus = response.status();

@@ -9,7 +9,8 @@ Evaluatory is an [open-source](https://github.com/darekkay/evaluatory) tool for 
 Evaluatory comes with some essential improvements:
 
 - Run checks at **multiple device breakpoints** at the same time (e.g. mobile, tablet and desktop). Some accessibility issues appear only at a certain breakpoint.
-- Provide a **visual HTML results page**.
+- Emulate **dark mode**, disabled JavaScript, offline mode and more by using [custom Playwright options](https://playwright.dev/docs/api/class-browser#browser-new-context).
+- Return a **visual HTML results page**, including page screenshots.
 - Support for **sitemaps** to check all referenced web pages at once.
 
 This project uses a modular architecture, so in the long term it could become an alternative to tools like [webhint](https://webhint.io).

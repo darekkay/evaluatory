@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+- :sparkles: Support custom Playwright options, e.g. to emulate a dark color scheme.
+- :hammer: Update dependencies.
+
 ## [1.7.1] - 2021-12-09
 
 - :hammer: Update dependencies.

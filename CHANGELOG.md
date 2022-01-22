@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [2.0.0] - 2022-01-22
+
 - :sparkles: Support custom Playwright options, e.g. to emulate a dark color scheme.
 - :hammer: **(Breaking Change)** Drop Node 12 support.
 - :hammer: Update dependencies.
@@ -95,7 +97,8 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/evaluatory/compare/1.7.1...HEAD
+[Unreleased]: https://github.com/darekkay/evaluatory/compare/2.0.0...HEAD
+[2.0.0]: https://github.com/darekkay/evaluatory/compare/1.7.1...2.0.0
 [1.7.1]: https://github.com/darekkay/evaluatory/compare/1.7.0...1.7.1
 [1.7.0]: https://github.com/darekkay/evaluatory/compare/1.6.0...1.7.0
 [1.6.0]: https://github.com/darekkay/evaluatory/compare/1.5.4...1.6.0

@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [2.1.1] - 2022-01-22
+
 - :gem: Add dark mode (derived from browser/system settings).
 
 ## [2.1.0] - 2022-01-22
@@ -103,7 +105,8 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/evaluatory/compare/2.1.0...HEAD
+[Unreleased]: https://github.com/darekkay/evaluatory/compare/2.1.1...HEAD
+[2.1.1]: https://github.com/darekkay/evaluatory/compare/2.1.0...2.1.1
 [2.1.0]: https://github.com/darekkay/evaluatory/compare/2.0.0...2.1.0
 [2.0.0]: https://github.com/darekkay/evaluatory/compare/1.7.1...2.0.0
 [1.7.1]: https://github.com/darekkay/evaluatory/compare/1.7.0...1.7.1

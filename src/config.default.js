@@ -34,11 +34,11 @@ module.exports = {
     },
   ],
 
-  // Browser color scheme ("light", "dark", "no-preference")
-  colorScheme: "light",
-
   // Custom Playwright options: https://playwright.dev/docs/api/class-browser#browser-new-context
-  playwrightOptions: {},
+  playwrightOptions: {
+    // Browser color scheme ("light", "dark", "no-preference")
+    colorScheme: "light",
+  },
 
   // Handles HTTP status codes above 400 as errors, i.e., evaluatory modules will not be executed.
   handleHttpErrorCodes: true,

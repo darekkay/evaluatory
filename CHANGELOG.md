@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - :sparkles: Support custom Playwright options, e.g. to emulate a dark color scheme.
+- :hammer: **(Breaking Change)** Drop Node 12 support.
 - :hammer: Update dependencies.
 
 ## [1.7.1] - 2021-12-09

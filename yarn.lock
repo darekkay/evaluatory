@@ -1806,10 +1806,10 @@
     which "2.0.2"
     yargs-parser "21.0.0"
 
-"@darekkay/styles@2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@darekkay/styles/-/styles-2.5.0.tgz#4f9530c75174eeabc106b3c472827d3d9c89c215"
-  integrity sha512-TcRJrB3u26/yzBPlVMRVYz+BAO3/rKUI8CIl3M5GKkfJQLdQL7VnWrc0gCvINGCigvLQcQokNMZ4wNllMFqF1g==
+"@darekkay/styles@2.6.1":
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/@darekkay/styles/-/styles-2.6.1.tgz#9021c3c0e755fb4605cd5b7471bc8e56748d13b9"
+  integrity sha512-j2tqPBi1j028Ymy6AbUtxg9LDZM2xTXpvsTw4eejk4PS2sH93/8xF+o0E2ICMxeF3/aafakJMrGCJB8yRcbJ0g==
   dependencies:
     "@types/tailwindcss" "2.2.4"
 

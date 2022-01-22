@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :gem: Add dark mode (derived from browser/system settings).
+
 ## [2.1.0] - 2022-01-22
 
 - :sparkles: Provide custom CLI config option to run checks in dark mode.

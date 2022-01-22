@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="shortcut icon" href="assets/favicon.ico">
   <title>Evaluatory results</title>
+  <script>(function() {
+      document.documentElement.dataset.theme = localStorage.getItem("theme")
+        || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "default");
+    })();</script>
   <style>
     main {
       max-width: 1000px;
@@ -45,7 +49,7 @@
         {% for result in results.fail %}
           <tr>
             <td><a href="{{ result.url }}">{{ result.url }}</a></td>
-            <td class="no-wrap {{ 'issue' if result.issueCount > 0 }}">{{ result.issueCount }} issue{% if result.issueCount !== 1 %}s{% endif %}</td>
+            <td class="no-wrap {{ 'text-danger' if result.issueCount > 0 }}">{{ result.issueCount }} issue{% if result.issueCount !== 1 %}s{% endif %}</td>
             <td>
               {% if result.responseError %}
                 Response error
@@ -62,7 +66,7 @@
       </table>
 
       <p class="text-center">Found
-        <strong class="issue">{{ totalIssueCount }} issue{% if totalIssueCount !== 1 %}s{% endif %}</strong> in total.
+        <strong class="text-danger">{{ totalIssueCount }} issue{% if totalIssueCount !== 1 %}s{% endif %}</strong> in total.
       </p>
       <hr>
     {% endif %}

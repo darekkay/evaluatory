@@ -18,10 +18,6 @@ img {
   display: inline-block;
 }
 
-.issue {
-  color: #db2106;
-}
-
 .no-wrap {
   white-space: nowrap;
 }
@@ -45,7 +41,7 @@ img {
   color: $orange-vivid-40;
 }
 .icon-severity-critical {
-  color: $red-50;
+  color: var(--color-text-danger);
 }
 .icon-severity-success {
   color: $green-vivid-30;

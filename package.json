@@ -30,7 +30,7 @@
   "devDependencies": {
     "@darekkay/gulp": "1.9.0",
     "@darekkay/scripts": "1.5.3",
-    "@darekkay/styles": "2.5.0",
+    "@darekkay/styles": "2.6.1",
     "http-server": "14.1.0",
     "rimraf": "3.0.2"
   },

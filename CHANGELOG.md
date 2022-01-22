@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :sparkles: Provide custom CLI config option to run checks in dark mode.
+
 ## [2.0.0] - 2022-01-22
 
 - :sparkles: Support custom Playwright options, e.g. to emulate a dark color scheme.

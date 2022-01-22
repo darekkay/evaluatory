@@ -47,10 +47,11 @@ const getConfig = async (cliArguments = {}) => {
 
   const argvConfig = {
     output: cliArguments.output,
+    colorScheme: cliArguments["color-scheme"],
     modules: cliArguments.modules ? cliArguments.modules.split(",") : undefined,
-    urls: cliArguments.url ? [cliArguments.url] : undefined,
     openResults: cliArguments["no-open-results"] ? false : undefined,
     sitemap: cliArguments.sitemap,
+    urls: cliArguments.url ? [cliArguments.url] : undefined,
   };
 
   const config = _.mergeWith(
@@ -66,6 +67,10 @@ const getConfig = async (cliArguments = {}) => {
     throw new Error(
       `Unknown Playwright browser '${config.browser}'. Please use one of "chromium", "firefox" or "webkit".`
     );
+  }
+
+  if (config.colorScheme) {
+    config.playwrightOptions.colorScheme = config.colorScheme;
   }
 
   if (config.sitemap) {

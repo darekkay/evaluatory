@@ -8,11 +8,15 @@ const getConfig = require("../src/utils/config");
 cli
   .string("-c, --config", { desc: "Configuration file path" })
   .string("-o, --output", { desc: "Output folder" })
-  .string("--sitemap", { desc: "Sitemap URL" })
+  .enumeration("--color-scheme", {
+    desc: "Color scheme",
+    choices: ["light", "dark", "no-preference"],
+  })
   .string("-m, --modules", { desc: "Modules to execute (comma-separated)" })
   .boolean("--no-open-results", {
     desc: "Don't open the results page after evaluation",
   })
+  .string("--sitemap", { desc: "Sitemap URL" })
   .boolean("--verbose", { desc: "Verbose/debug mode" })
   .positional("[url]", { paramsDesc: "URL", optional: true });
 

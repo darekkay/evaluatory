@@ -71,9 +71,10 @@ Arguments:
 Options:
   -c, --config       Configuration file path
   -o, --output       Output folder
-  --sitemap          Sitemap URL
+  --color-scheme     Color scheme (light, dark, no-preference)
   -m, --modules      Modules to execute (comma-separated)
   --no-open-results  Don't open the results page after evaluation
+  --sitemap          Sitemap URL
   --verbose          Verbose/debug mode
   -h, --help         Show help
   -v, --version      Show version number

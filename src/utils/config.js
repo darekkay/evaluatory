@@ -1,6 +1,6 @@
 const _ = require("lodash");
 const axios = require("axios");
-const xml = require("fast-xml-parser");
+const { XMLParser } = require("fast-xml-parser");
 const { readFileSync } = require("fs-extra");
 const json5 = require("json5");
 const logger = require("@darekkay/logger");
@@ -20,6 +20,7 @@ const getUrlsForSitemap = async (sitemapUrl) => {
     const response = await axios.get(sitemapUrl);
     const sitemap = response.data;
     if (sitemap) {
+      const xml = new XMLParser({ ignoreAttributes: false, });
       const json = xml.parse(sitemap);
       if (json && json.urlset && json.urlset.url) {
         return json.urlset.url.map((url) => url.loc);

@@ -20,7 +20,7 @@ const getUrlsForSitemap = async (sitemapUrl) => {
     const response = await axios.get(sitemapUrl);
     const sitemap = response.data;
     if (sitemap) {
-      const xml = new XMLParser({ ignoreAttributes: false, });
+      const xml = new XMLParser({ ignoreAttributes: false });
       const json = xml.parse(sitemap);
       if (json && json.urlset && json.urlset.url) {
         return json.urlset.url.map((url) => url.loc);

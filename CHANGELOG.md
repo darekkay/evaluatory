@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [2.1.2] - 2022-02-03
+
+- :bug: Fix parsing sitemaps.
+
 ## [2.1.1] - 2022-01-22
 
 - :gem: Add dark mode (derived from browser/system settings).
@@ -105,7 +109,8 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/evaluatory/compare/2.1.1...HEAD
+[Unreleased]: https://github.com/darekkay/evaluatory/compare/2.1.2...HEAD
+[2.1.2]: https://github.com/darekkay/evaluatory/compare/2.1.1...2.1.2
 [2.1.1]: https://github.com/darekkay/evaluatory/compare/2.1.0...2.1.1
 [2.1.0]: https://github.com/darekkay/evaluatory/compare/2.0.0...2.1.0
 [2.0.0]: https://github.com/darekkay/evaluatory/compare/1.7.1...2.0.0

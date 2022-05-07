@@ -20,7 +20,7 @@ module.exports = async ({ pageSource, moduleName, index, config }) => {
 
   const jsonFileName = `${index}-${moduleName}.json`;
   await outputJson(join(config.output, jsonFileName), validationResult);
-  const html = await render(join(__dirname, "template.njk"), {
+  const html = render(join(__dirname, "template.njk"), {
     violations,
     issueCount,
     moduleVersion,

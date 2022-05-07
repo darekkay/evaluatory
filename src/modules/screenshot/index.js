@@ -17,7 +17,7 @@ module.exports = async ({ page, moduleName, index, config }) => {
     });
   }
 
-  const html = await render(join(__dirname, "template.njk"), { images });
+  const html = render(join(__dirname, "template.njk"), { images });
 
   return { issueCount: 0, html };
 };

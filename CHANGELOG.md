@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [2.2.0] - 2022-05-07
+
 - :sparkles: Add new `base` module.
 - :sparkles: Check for horizontal content overflows (`base` module).
 
@@ -112,7 +114,8 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/evaluatory/compare/2.1.2...HEAD
+[Unreleased]: https://github.com/darekkay/evaluatory/compare/2.2.0...HEAD
+[2.2.0]: https://github.com/darekkay/evaluatory/compare/2.1.2...2.2.0
 [2.1.2]: https://github.com/darekkay/evaluatory/compare/2.1.1...2.1.2
 [2.1.1]: https://github.com/darekkay/evaluatory/compare/2.1.0...2.1.1
 [2.1.0]: https://github.com/darekkay/evaluatory/compare/2.0.0...2.1.0

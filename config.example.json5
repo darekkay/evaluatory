@@ -12,7 +12,7 @@
   ],
 
   // Modules to run
-  modules: ["axe-core", "html-validate", "screenshot"],
+  modules: ["base", "axe-core", "html-validate", "screenshot"],
 
   modulesConfig: {
     "axe-core": {

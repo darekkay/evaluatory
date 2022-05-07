@@ -8,7 +8,7 @@ module.exports = {
   urls: [],
 
   // Modules to run
-  modules: ["axe-core", "html-validate", "screenshot"],
+  modules: ["base", "axe-core", "html-validate", "screenshot"],
 
   // Max number of parallel connections
   maxConnections: 5,
@@ -51,6 +51,11 @@ module.exports = {
 
   // Module configuration
   modulesConfig: {
+    base: {
+      // check for horizontal overflows
+      "horizontal-content-overflow": true,
+    },
+
     "axe-core": {
       rules: {
         // by default, all rules except "experimental" are executed

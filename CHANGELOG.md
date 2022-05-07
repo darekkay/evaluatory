@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+- :sparkles: Add new `base` module.
+- :sparkles: Check for horizontal content overflows (`base` module).
+
 ## [2.1.2] - 2022-02-03
 
 - :bug: Fix parsing sitemaps.
@@ -79,7 +82,7 @@
 
 ## [1.4.0] - 2020-11-21
 
-- :bug: List all axe-core violation occurrences.
+- :bug: List all `axe-core` violation occurrences.
 - :hammer: Replace TravisCI with GitHub Actions.
 
 ## [1.3.1] - 2020-10-28
@@ -103,7 +106,7 @@
 
 ## [1.1.0] - 2020-10-25
 
-- :bug: Fix paths to axe-core and nunjucks templates.
+- :bug: Fix paths to `axe-core` and nunjucks templates.
 
 ## [1.0.0] - 2020-10-25
 

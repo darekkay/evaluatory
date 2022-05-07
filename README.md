@@ -21,6 +21,7 @@ Check out a demo results page at [https://darekkay.com/evaluatory/demo/](https:/
 
 ## Modules
 
+- **base**: Custom built-in checks.
 - **axe-core**: Checks for accessibility issues using [axe-core](https://github.com/dequelabs/axe-core).
 - **html-validate**: Validates the HTML using [html-validate](https://html-validate.org).
 - **screenshot**: Takes a screenshot of the page.

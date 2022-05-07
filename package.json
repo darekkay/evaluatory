@@ -67,7 +67,7 @@
     "clean": "rimraf docs/",
     "dev": "node bin/evaluatory.js --config config.example.json5",
     "dev:debug": "node bin/evaluatory.js --config config.example.json5 --verbose",
-    "dev:server": "hs -p 9005 mock/",
+    "dev:server": "http-server -p 9005 mock/",
     "docs": "node bin/evaluatory.js --config config.demo.json5 --no-open-results --output docs/demo",
     "format": "dks format",
     "lint": "dks lint",

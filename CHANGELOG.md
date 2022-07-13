@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [2.3.0] - 2022-07-13
+
 - :gem: Fix line breaks in long URLs.
 - :gem: Make error color accessible on offset background.
 - :hammer: Update dependencies.
@@ -118,7 +120,8 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/evaluatory/compare/2.2.0...HEAD
+[Unreleased]: https://github.com/darekkay/evaluatory/compare/2.3.0...HEAD
+[2.3.0]: https://github.com/darekkay/evaluatory/compare/2.2.0...2.3.0
 [2.2.0]: https://github.com/darekkay/evaluatory/compare/2.1.2...2.2.0
 [2.1.2]: https://github.com/darekkay/evaluatory/compare/2.1.1...2.1.2
 [2.1.1]: https://github.com/darekkay/evaluatory/compare/2.1.0...2.1.1

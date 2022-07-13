@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :gem: Fix line breaks in long URLs.
+
 ## [2.2.0] - 2022-05-07
 
 - :sparkles: Add new `base` module.

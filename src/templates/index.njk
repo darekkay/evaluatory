@@ -48,7 +48,7 @@
         <tbody>
         {% for result in results.fail %}
           <tr>
-            <td><a href="{{ result.url }}">{{ result.url }}</a></td>
+            <td class="break-anywhere"><a href="{{ result.url }}">{{ result.url }}</a></td>
             <td class="no-wrap {{ 'text-danger' if result.issueCount > 0 }}">{{ result.issueCount }} issue{% if result.issueCount !== 1 %}s{% endif %}</td>
             <td>
               {% if result.responseError %}

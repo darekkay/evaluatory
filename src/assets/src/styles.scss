@@ -22,6 +22,10 @@ img {
   white-space: nowrap;
 }
 
+.break-anywhere {
+  overflow-wrap: anywhere;
+}
+
 .font-normal {
   font-weight: normal;
 }

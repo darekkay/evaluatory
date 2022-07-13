@@ -4,6 +4,7 @@
 
 - :gem: Fix line breaks in long URLs.
 - :gem: Make error color accessible on offset background.
+- :hammer: Update dependencies.
 
 ## [2.2.0] - 2022-05-07
 

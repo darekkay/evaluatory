@@ -40,7 +40,7 @@ const getConfig = async (cliArguments = {}) => {
 
   if (configPath) {
     try {
-      userConfig = json5.parse(readFileSync(configPath, "utf-8"));
+      userConfig = json5.parse(readFileSync(configPath, "utf8"));
     } catch (error) {
       logger.error(error);
     }

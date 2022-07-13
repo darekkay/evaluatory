@@ -82,6 +82,7 @@ module.exports = {
         "no-self-closing": "off",
         "no-trailing-whitespace": "off",
         "no-utf8-bom": "off",
+        "require-csp-nonce": "off",
         "require-sri": "off",
         "svg-focusable": "off",
         "void-style": "off",

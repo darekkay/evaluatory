@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@darekkay/logger": "1.2.0",
-    "axe-core": "^4.3.5",
+    "axe-core": "^4.4.2",
     "axios": "0.25.0",
     "dayjs": "1.10.7",
     "fast-xml-parser": "4.0.1",
@@ -28,9 +28,9 @@
     "tiny-async-pool": "1.2.0"
   },
   "devDependencies": {
-    "@darekkay/gulp": "1.9.0",
-    "@darekkay/scripts": "1.5.3",
-    "@darekkay/styles": "2.6.1",
+    "@darekkay/gulp": "2.1.1",
+    "@darekkay/scripts": "2.4.0",
+    "@darekkay/styles": "3.2.3",
     "http-server": "14.1.0",
     "rimraf": "3.0.2"
   },

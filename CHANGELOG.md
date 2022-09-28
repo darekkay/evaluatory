@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [2.3.1] - 2022-09-28
+
 - :bug: Make severity icons accessible.
 
 ## [2.3.0] - 2022-07-13
@@ -122,7 +124,8 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/evaluatory/compare/2.3.0...HEAD
+[unreleased]: https://github.com/darekkay/evaluatory/compare/2.3.1...HEAD
+[2.3.1]: https://github.com/darekkay/evaluatory/compare/2.3.0...2.3.1
 [2.3.0]: https://github.com/darekkay/evaluatory/compare/2.2.0...2.3.0
 [2.2.0]: https://github.com/darekkay/evaluatory/compare/2.1.2...2.2.0
 [2.1.2]: https://github.com/darekkay/evaluatory/compare/2.1.1...2.1.2

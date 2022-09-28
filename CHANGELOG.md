@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :bug: Make severity icons accessible.
+
 ## [2.3.0] - 2022-07-13
 
 - :gem: Fix line breaks in long URLs.

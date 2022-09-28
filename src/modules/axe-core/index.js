@@ -64,7 +64,7 @@ module.exports = async ({ page, moduleName, index, config }) => {
         );
         if (!accumulatedViolation) {
           violation.breakpoints = [deviceName];
-          violation.icon = `icon-severity-${violation.impact}`;
+          violation.severity = violation.impact;
           accumulator.push(violation);
         } else {
           accumulatedViolation.breakpoints.push(deviceName);

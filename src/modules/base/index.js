@@ -16,7 +16,7 @@ module.exports = async ({ page, moduleName, config }) => {
       const documentScrollWidth = await getDocumentScrollWidth(page);
       if (documentScrollWidth > deviceOptions.viewport.width) {
         violations.push({
-          icon: "icon-severity-moderate",
+          severity: "moderate",
           title: `Horizontal content overflow on ${deviceName}`,
           description: `Device width: <strong>${deviceOptions.viewport.width}</strong>. Document scroll width: <strong>${documentScrollWidth}</strong>.`,
         });

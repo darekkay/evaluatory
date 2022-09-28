@@ -10,7 +10,12 @@
 
 {% for violation in violations %}
   <section>
-    <h3><svg class="icon icon-severity icon-severity-serious" role="img" aria-hidden="true"><use xlink:href="#icon-severity-serious"></use></svg> {{ violation.message }}</h3>
+    <h3>
+      <svg class="icon icon-severity icon-severity-serious" role="img">
+        <title>Serious severity</title>
+        <use xlink:href="#icon-severity-serious"></use>
+      </svg> {{ violation.message }}
+    </h3>
     <p>Violated
       <a href="https://html-validate.org/rules/{{ violation.ruleId }}.html" target="_blank" rel="noopener">{{ violation.ruleId }}</a>
     </p>

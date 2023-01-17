@@ -1,7 +1,7 @@
 # Evaluatory
 
 [![npm](https://img.shields.io/npm/v/evaluatory?style=flat-square)](https://www.npmjs.com/package/evaluatory)
-[![Build](https://img.shields.io/github/workflow/status/darekkay/evaluatory/Continuous%20Integration/master?style=flat-square)](https://github.com/darekkay/evaluatory/actions)
+[![Build](https://img.shields.io/github/actions/workflow/status/darekkay/evaluatory/ci.yml?branch=master&style=flat-square)](https://github.com/darekkay/evaluatory/actions/workflows/ci.yml)
 [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/darekkay/evaluatory/blob/master/LICENSE)
 
 Evaluatory is an [open-source](https://github.com/darekkay/evaluatory) tool for website validation. It is mainly a wrapper around [axe-core](https://github.com/dequelabs/axe-core) and [html-validate](https://html-validate.org), which test a website for accessibility and markup issues.

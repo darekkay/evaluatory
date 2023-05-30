@@ -5,7 +5,7 @@
   <li>
     <strong class="{{ 'text-danger' if issueCount > 0 }}">{{ issueCount }} violation(s)</strong>
   </li>
-  <li>View <a href="{{ jsonFileName }}">JSON results</a></li>
+  <li class="prose">View <a href="{{ jsonFileName }}">JSON results</a></li>
 </ul>
 
 {% for violation in violations %}
@@ -16,7 +16,7 @@
         <use xlink:href="#icon-severity-{{ violation.severity }}"></use>
       </svg> {{ violation.description }}
     </h3>
-    <p>Violated
+    <p class="prose">Violated
       <a href="{{ violation.helpUrl }}" target="_blank" rel="noopener">{{ violation.id }}</a> on:
       <em>{{ violation.breakpoints.join(", ") }}</em></p>
 

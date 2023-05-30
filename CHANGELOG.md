@@ -4,6 +4,7 @@
 
 - :boom: Drop Node 14 support.
 - :rocket: Disable `axe-core` "landmark-complementary-is-top-level" rule by default as it's [buggy](https://github.com/dequelabs/axe-core/issues/3586).
+- :bug: Fix WCAG issues on the output page.
 - :hammer: Update dependencies.
 - :hammer: Simplify GitHub CI.
 

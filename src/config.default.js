@@ -62,7 +62,7 @@ module.exports = {
         // https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md
 
         // this rule doesn't make any sense: https://yatil.social/@yatil/110423042090716039
-        "landmark-complementary-is-top-level": "off"
+        "landmark-complementary-is-top-level": "off",
       },
     },
 

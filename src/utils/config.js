@@ -27,7 +27,7 @@ const getUrlsForSitemap = async (sitemapUrl) => {
       }
     }
   } catch (error) {
-    logger.error(error.message ? error.message : error);
+    logger.error(error.message ?? error);
     return [];
   }
   return [];

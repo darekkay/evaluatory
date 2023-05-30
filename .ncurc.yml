@@ -3,3 +3,6 @@
 reject:
   # new API returns promises asynchronously, changing the order of results
   - "tiny-async-pool"
+
+  # ESM modules
+  - "open"

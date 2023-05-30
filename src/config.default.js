@@ -60,6 +60,9 @@ module.exports = {
       rules: {
         // by default, all rules except "experimental" are executed
         // https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md
+
+        // this rule doesn't make any sense: https://yatil.social/@yatil/110423042090716039
+        "landmark-complementary-is-top-level": "off"
       },
     },
 

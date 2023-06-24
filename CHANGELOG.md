@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [3.1.0] - 2023-06-24
+
 - :gem: Update CSS styles.
 
 ## [3.0.0] - 2023-05-30
@@ -134,7 +136,8 @@
 
 - :tada: Initial release.
 
-[unreleased]: https://github.com/darekkay/evaluatory/compare/2.3.1...HEAD
+[unreleased]: https://github.com/darekkay/evaluatory/compare/3.1.0...HEAD
+[3.1.0]: https://github.com/darekkay/evaluatory/compare/3.0.0...3.1.0
 [3.0.0]: https://github.com/darekkay/evaluatory/compare/2.3.1...3.0.0
 [2.3.1]: https://github.com/darekkay/evaluatory/compare/2.3.0...2.3.1
 [2.3.0]: https://github.com/darekkay/evaluatory/compare/2.2.0...2.3.0

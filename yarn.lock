@@ -1747,10 +1747,10 @@
     chalk "4.1.2"
     loglevel "1.8.1"
 
-"@darekkay/scripts@2.6.1":
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/@darekkay/scripts/-/scripts-2.6.1.tgz#ca8964399f674a778ac106f1ac406090f42ea7ff"
-  integrity sha512-q4XiaCAkbLSaVZkiOqQQKlAFxtmUQbVhIjjOmJPwGGn1elwHxrrGRcBSQHR0kNIrwWkcgTeJ4UBmUKcoCXB8eQ==
+"@darekkay/scripts@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/@darekkay/scripts/-/scripts-2.6.2.tgz#90d323a86e4eba4adf71b410c3b4c5db06206427"
+  integrity sha512-cOqW0ACmI+Hvr8MESREoOHEKqzWIWnoFqj8D0KPcLC3xrgPiPnnONHgHDix2kuy/DWABzP39cOKOnm2P21HVCQ==
   dependencies:
     "@babel/core" "7.21.8"
     "@babel/plugin-proposal-class-properties" "7.18.6"
@@ -1776,10 +1776,10 @@
     which "3.0.1"
     yargs-parser "21.1.1"
 
-"@darekkay/styles@4.2.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@darekkay/styles/-/styles-4.2.1.tgz#6e7a7ce061ebfd7eab8eced3bd005ae865aac872"
-  integrity sha512-BbUtZfI8cyrjY58/R+yWe0kprQsLu1DNV4iJr8Ugoh0RxXLABuV+uIIvHw15ADXZcXyeq8VxdhrTA/QrmjygKw==
+"@darekkay/styles@4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@darekkay/styles/-/styles-4.3.0.tgz#9c88c9c6fc1158a71b8f5c9ee28e1616ce7bedfa"
+  integrity sha512-gNR86ZG4uz9rK0inG0/TiDQyTIwclqW9tnwv6BVqewRRGExhxi7mxBGaTNETl7qteeRNUMyfOvaeJ8rw+E/KYA==
   dependencies:
     "@types/tailwindcss" "2.2.4"
 
@@ -5158,10 +5158,10 @@ fast-levenshtein@^2.0.6, fast-levenshtein@~2.0.6:
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
 
-fast-xml-parser@4.2.2:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-4.2.2.tgz#cb7310d1e9cf42d22c687b0fae41f3c926629368"
-  integrity sha512-DLzIPtQqmvmdq3VUKR7T6omPK/VCRNqgFlGtbESfyhcH2R4I8EzK1/K6E8PkRCK2EabWrUHK32NjYRbEFnnz0Q==
+fast-xml-parser@4.2.5:
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-4.2.5.tgz#a6747a09296a6cb34f2ae634019bf1738f3b421f"
+  integrity sha512-B9/wizE4WngqQftFPmdaMYlXoJlJOYxGQOanC77fq9k8+Z0v5dDSVh+3glErdIROP//s/jgb7ZuxKfB8nVyo0g==
   dependencies:
     strnum "^1.0.5"
 

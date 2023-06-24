@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+- :gem: Update CSS styles.
+
+## [3.0.0] - 2023-05-30
+
 - :boom: Drop Node 14 support.
 - :rocket: Disable `axe-core` "landmark-complementary-is-top-level" rule by default as it's [buggy](https://github.com/dequelabs/axe-core/issues/3586).
 - :bug: Fix WCAG issues on the output page.
@@ -131,6 +135,7 @@
 - :tada: Initial release.
 
 [unreleased]: https://github.com/darekkay/evaluatory/compare/2.3.1...HEAD
+[3.0.0]: https://github.com/darekkay/evaluatory/compare/2.3.1...3.0.0
 [2.3.1]: https://github.com/darekkay/evaluatory/compare/2.3.0...2.3.1
 [2.3.0]: https://github.com/darekkay/evaluatory/compare/2.2.0...2.3.0
 [2.2.0]: https://github.com/darekkay/evaluatory/compare/2.1.2...2.2.0

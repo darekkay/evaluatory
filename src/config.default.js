@@ -89,6 +89,7 @@ module.exports = {
         "require-sri": "off",
         "svg-focusable": "off",
         "void-style": "off",
+        "wcag/h63": "off", // too many false-positives
       },
     },
   },

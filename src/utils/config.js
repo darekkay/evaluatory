@@ -60,13 +60,13 @@ const getConfig = async (cliArguments = {}) => {
     defaultConfig,
     userConfig,
     argvConfig,
-    configArrayCustomizer
+    configArrayCustomizer,
   );
 
   if (!["chromium", "firefox", "webkit"].includes(config.browser)) {
     // verify browser value
     throw new Error(
-      `Unknown Playwright browser '${config.browser}'. Please use one of "chromium", "firefox" or "webkit".`
+      `Unknown Playwright browser '${config.browser}'. Please use one of "chromium", "firefox" or "webkit".`,
     );
   }
 

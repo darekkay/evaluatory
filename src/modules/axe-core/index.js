@@ -45,7 +45,7 @@ module.exports = async ({ page, moduleName, index, config }) => {
       ({ moduleConfig }) => {
         return window.axe.run(window.document, moduleConfig);
       },
-      { moduleConfig: config.modulesConfig[moduleName] }
+      { moduleConfig: config.modulesConfig[moduleName] },
     );
 
     violationsPerDevice[deviceName] = axeResults.violations;
@@ -60,7 +60,7 @@ module.exports = async ({ page, moduleName, index, config }) => {
       deviceViolations.forEach((violation) => {
         const accumulatedViolation = _.find(
           accumulator,
-          (value) => value.id === violation.id
+          (value) => value.id === violation.id,
         );
         if (!accumulatedViolation) {
           violation.breakpoints = [deviceName];
@@ -74,7 +74,7 @@ module.exports = async ({ page, moduleName, index, config }) => {
               !_.some(
                 accumulatedViolation.nodes,
                 (accumulatedNode) =>
-                  node.target.join("") === accumulatedNode.target.join("")
+                  node.target.join("") === accumulatedNode.target.join(""),
               )
             ) {
               accumulatedViolation.nodes.push(node);
@@ -84,12 +84,12 @@ module.exports = async ({ page, moduleName, index, config }) => {
       });
       return accumulator;
     },
-    []
+    [],
   );
 
   const issueCount = violations.reduce(
     (accumulator, violation) => accumulator + violation.nodes.length,
-    0
+    0,
   );
 
   const jsonFileName = `${index}-${moduleName}.json`;

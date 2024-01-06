@@ -55,7 +55,7 @@ const executeForSingleUrl = async ({ config, modules, url, ...parameters }) => {
     await renderToFile(
       join(__dirname, "templates", "module.njk"),
       { url, modules, results: htmlParts },
-      join(config.output, `${parameters.index}.html`)
+      join(config.output, `${parameters.index}.html`),
     );
   } catch (error) {
     logger.error(error.message || error);
@@ -87,7 +87,7 @@ const execute = async (config) => {
     .filter(Boolean);
 
   logger.info(
-    `Evaluating ${config.urls.length} URL${config.urls.length > 1 ? "s" : ""}`
+    `Evaluating ${config.urls.length} URL${config.urls.length > 1 ? "s" : ""}`,
   );
   logger.info("Clearing output folder:", resolve(join(config.output)));
   await emptyDir(config.output);
@@ -105,9 +105,9 @@ const execute = async (config) => {
           modules,
         },
       ],
-      []
+      [],
     ),
-    executeForSingleUrl
+    executeForSingleUrl,
   );
 
   // group results by fail/success
@@ -121,12 +121,12 @@ const execute = async (config) => {
       }
       return accumulator;
     },
-    { fail: [], success: [] }
+    { fail: [], success: [] },
   );
 
   const totalIssueCount = results.reduce(
     (accumulator, result) => accumulator + result.issueCount,
-    0
+    0,
   );
 
   // create an index file
@@ -138,7 +138,7 @@ const execute = async (config) => {
       totalIssueCount,
       lastGenerated: dayjs().format("YYYY-MM-DD HH:mm:ss"),
     },
-    join(config.output, "index.html")
+    join(config.output, "index.html"),
   );
 
   // copy static assets

@@ -9,7 +9,7 @@ const { render } = require("../../utils/render");
 /** Module to validate HTML of a page */
 module.exports = async ({ pageSource, moduleName, index, config }) => {
   const htmlvalidate = new HtmlValidate(config.modulesConfig[moduleName]);
-  const validationResult = htmlvalidate.validateString(pageSource);
+  const validationResult = await htmlvalidate.validateString(pageSource);
   const issueCount =
     validationResult.errorCount + validationResult.warningCount;
 

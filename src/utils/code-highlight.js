@@ -37,7 +37,7 @@ class NunjucksExtension {
       lang = code.language;
     }
     return new SafeString(
-      this.wrap(`<code class="language-${lang}">${code.value}</code>`)
+      this.wrap(`<code class="language-${lang}">${code.value}</code>`),
     );
   }
 

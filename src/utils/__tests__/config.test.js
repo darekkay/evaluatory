@@ -16,7 +16,7 @@ describe("config", () => {
 
   test("user config overrides default config", async () => {
     await expect(
-      getConfig({ config: join(__dirname, "test-config.json") })
+      getConfig({ config: join(__dirname, "test-config.json") }),
     ).resolves.toEqual({
       ...defaultConfig,
       maxConnections: 1,
@@ -29,7 +29,7 @@ describe("config", () => {
       getConfig({
         config: join(__dirname, "test-config.json"),
         modules: "axe-core",
-      })
+      }),
     ).resolves.toEqual({
       ...defaultConfig,
       maxConnections: 1,
@@ -42,7 +42,7 @@ describe("config", () => {
     await expect(
       getConfig({
         config: join(__dirname, "nonexisting-config.json"),
-      })
+      }),
     ).resolves.toEqual(defaultConfig);
   });
 });

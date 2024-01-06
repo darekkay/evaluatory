@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [4.0.0] - 2024-01-06
+
 - :boom: Drop Node 16 support.
 - :rocket: Disable `html-validate` "wcag/h63" rule by default as [it reports errors for accessible tables](https://www.w3.org/WAI/tutorials/tables/one-header/).
 - :hammer: Update dependencies.
@@ -142,7 +144,8 @@
 
 - :tada: Initial release.
 
-[unreleased]: https://github.com/darekkay/evaluatory/compare/3.1.0...HEAD
+[unreleased]: https://github.com/darekkay/evaluatory/compare/4.0.0...HEAD
+[4.0.0]: https://github.com/darekkay/evaluatory/compare/3.1.0...4.0.0
 [3.1.0]: https://github.com/darekkay/evaluatory/compare/3.0.0...3.1.0
 [3.0.0]: https://github.com/darekkay/evaluatory/compare/2.3.1...3.0.0
 [2.3.1]: https://github.com/darekkay/evaluatory/compare/2.3.0...2.3.1

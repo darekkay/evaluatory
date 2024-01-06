@@ -5,6 +5,7 @@
 - :boom: Drop Node 16 support.
 - :rocket: Disable `html-validate` "wcag/h63" rule by default as [it reports errors for accessible tables](https://www.w3.org/WAI/tutorials/tables/one-header/).
 - :hammer: Switch from Yarn to npm.
+- :hammer: Update GitHub Action versions.
 
 ## [3.1.0] - 2023-06-24
 

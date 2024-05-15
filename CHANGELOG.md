@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :hammer: Update dependencies.
+
 ## [4.0.0] - 2024-01-06
 
 - :boom: Drop Node 16 support.

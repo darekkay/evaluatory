@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- :bug: Fix issue with missing Playwright browsers.
 - :hammer: Update dependencies.
 
 ## [4.0.0] - 2024-01-06

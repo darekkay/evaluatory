@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [4.1.0] - 2024-05-15
+
 - :bug: Fix issue with missing Playwright browsers.
 - :hammer: Update dependencies.
 
@@ -147,7 +149,8 @@
 
 - :tada: Initial release.
 
-[unreleased]: https://github.com/darekkay/evaluatory/compare/4.0.0...HEAD
+[unreleased]: https://github.com/darekkay/evaluatory/compare/4.1.0...HEAD
+[4.1.0]: https://github.com/darekkay/evaluatory/compare/4.0.0...4.1.0
 [4.0.0]: https://github.com/darekkay/evaluatory/compare/3.1.0...4.0.0
 [3.1.0]: https://github.com/darekkay/evaluatory/compare/3.0.0...3.1.0
 [3.0.0]: https://github.com/darekkay/evaluatory/compare/2.3.1...3.0.0

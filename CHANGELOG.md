@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :hammer: Replace axios with a native fetch.
+
 ## [4.1.0] - 2024-05-15
 
 - :bug: Fix issue with missing Playwright browsers.

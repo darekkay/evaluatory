@@ -15,7 +15,6 @@
     "@playwright/browser-firefox": "1.44.0",
     "@playwright/browser-webkit": "1.44.0",
     "axe-core": "^4.9.1",
-    "axios": "1.6.8",
     "dayjs": "1.11.11",
     "fast-xml-parser": "4.3.6",
     "fs-extra": "11.2.0",

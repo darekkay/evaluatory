@@ -1,5 +1,4 @@
 const _ = require("lodash");
-const axios = require("axios");
 const { XMLParser } = require("fast-xml-parser");
 const { readFileSync } = require("fs-extra");
 const json5 = require("json5");
@@ -17,8 +16,7 @@ const configArrayCustomizer = (objectValue, sourceValue) => {
 
 const getUrlsForSitemap = async (sitemapUrl) => {
   try {
-    const response = await axios.get(sitemapUrl);
-    const sitemap = response.data;
+    const sitemap = await fetch(sitemapUrl).then((res) => res.text());
     if (sitemap) {
       const xml = new XMLParser({ ignoreAttributes: false });
       const json = xml.parse(sitemap);

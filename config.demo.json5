@@ -1,5 +1,6 @@
 {
   urls: [
+    "https://alphagov.github.io/accessibility-tool-audit/test-cases.html",
     "https://example.com",
     "https://twitter.com",
     "https://medium.com/",

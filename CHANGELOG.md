@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [5.0.0] - 2026-10-10
+
 - :boom: Node 22 or later is now required.
 - :hammer: Replace axios with a native fetch.
 - :hammer: Update dependencies.
@@ -153,7 +155,8 @@
 
 - :tada: Initial release.
 
-[unreleased]: https://github.com/darekkay/evaluatory/compare/4.1.0...HEAD
+[Unreleased]: https://github.com/darekkay/evaluatory/compare/5.0.0...HEAD
+[5.0.0]: https://github.com/darekkay/evaluatory/compare/4.1.0...5.0.0
 [4.1.0]: https://github.com/darekkay/evaluatory/compare/4.0.0...4.1.0
 [4.0.0]: https://github.com/darekkay/evaluatory/compare/3.1.0...4.0.0
 [3.1.0]: https://github.com/darekkay/evaluatory/compare/3.0.0...3.1.0

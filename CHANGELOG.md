@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [5.0.2] - 2026-10-10
+
 - :hammer: Update default devices. 
 
 ## [5.0.0] - 2026-10-10
@@ -157,7 +159,7 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/evaluatory/compare/5.0.0...HEAD
+[Unreleased]: https://github.com/darekkay/evaluatory/compare/5.0.2...HEAD
 [5.0.0]: https://github.com/darekkay/evaluatory/compare/4.1.0...5.0.0
 [4.1.0]: https://github.com/darekkay/evaluatory/compare/4.0.0...4.1.0
 [4.0.0]: https://github.com/darekkay/evaluatory/compare/3.1.0...4.0.0
@@ -188,3 +190,5 @@
 [1.2.0]: https://github.com/darekkay/evaluatory/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/darekkay/evaluatory/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/darekkay/evaluatory/compare/tag/1.0.0
+
+[5.0.2]: https://github.com/darekkay/evaluatory/compare/5.0.1...5.0.2

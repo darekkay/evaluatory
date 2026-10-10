@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :hammer: Update default devices. 
+
 ## [5.0.0] - 2026-10-10
 
 - :boom: Node 22 or later is now required.

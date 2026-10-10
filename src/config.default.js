@@ -21,8 +21,8 @@ module.exports = {
 
   // Device variants to check
   devices: [
-    { name: "phone", options: playwrightDevices["iPhone 7"] },
-    { name: "tablet", options: playwrightDevices["iPad (gen 7)"] },
+    { name: "phone", options: playwrightDevices["iPhone 16"] },
+    { name: "tablet", options: playwrightDevices["iPad (gen 11)"] },
     {
       name: "desktop",
       options: {

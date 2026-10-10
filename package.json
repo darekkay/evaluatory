@@ -65,7 +65,10 @@
   },
   "overrides": {
     "string-width": "4.2.3",
-    "wrap-ansi": "7.0.0"
+    "wrap-ansi": "7.0.0",
+    "minimatch": {
+      "brace-expansion": "5.0.12"
+    }
   },
   "scripts": {
     "build": "gulp build",

@@ -36,7 +36,7 @@ npx evaluatory https://example.com
 
 ## Installation
 
-This tool requires Node.js version 12+.
+This tool requires Node.js version 22+.
 
 Install globally:
 

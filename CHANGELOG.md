@@ -2,7 +2,9 @@
 
 ## [Unreleased]
 
+- :boom: Node 22 or later is now required.
 - :hammer: Replace axios with a native fetch.
+- :hammer: Update dependencies.
 
 ## [4.1.0] - 2024-05-15
 
